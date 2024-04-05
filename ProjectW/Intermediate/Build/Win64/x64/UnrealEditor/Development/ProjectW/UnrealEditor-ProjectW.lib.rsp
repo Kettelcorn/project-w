@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-ProjectW.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\Kette\OneDrive\Documents\Unreal Projects\ProjectW\Intermediate\Build\Win64\x64\ProjectWEditor\Development\Engine\SharedPCH.Engine.Cpp20.h.obj"
+"C:\Users\Kette\OneDrive\Documents\Unreal Projects\ProjectW\Intermediate\Build\Win64\x64\UnrealEditor\Development\ProjectW\ProjectW.cpp.obj"
+"C:\Users\Kette\OneDrive\Documents\Unreal Projects\ProjectW\Intermediate\Build\Win64\x64\UnrealEditor\Development\ProjectW\Default.rc2.res"
+/OUT:"C:\Users\Kette\OneDrive\Documents\Unreal Projects\ProjectW\Intermediate\Build\Win64\x64\UnrealEditor\Development\ProjectW\UnrealEditor-ProjectW.lib"
