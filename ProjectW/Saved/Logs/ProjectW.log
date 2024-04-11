@@ -1336,3 +1336,1007 @@ LogInit: Object subsystem initialized
 [2024.04.11-20.09.20:039][815]LogFileHelpers: InternalPromptForCheckoutAndSave took 197 ms (total: 374 ms)
 [2024.04.11-20.09.20:043][815]AssetCheck: New page: Asset Save: Minimal_Default
 [2024.04.11-20.09.20:043][815]LogContentValidation: Display: Validating /Script/Engine.World /Game/Maps/Minimal_Default.Minimal_Default
+[2024.04.11-20.12.31:661][815]Cmd: POLY SELECT ADJACENT WALLS
+[2024.04.11-20.12.37:364][978]Cmd: ACTOR SELECT ALL
+[2024.04.11-20.12.37:557][979]Cmd: DUPLICATE
+[2024.04.11-20.12.37:557][979]Cmd: ACTOR DUPLICATE
+[2024.04.11-20.12.37:606][979]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2024.04.11-20.12.37:655][979]Cmd: DUPLICATE
+[2024.04.11-20.12.37:655][979]Cmd: ACTOR DUPLICATE
+[2024.04.11-20.12.37:683][979]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2024.04.11-20.12.39:529][ 19]Cmd: TRANSACTION UNDO
+[2024.04.11-20.12.39:529][ 19]LogEditorTransaction: Undo Duplicate Elements
+[2024.04.11-20.12.40:286][ 39]Cmd: TRANSACTION UNDO
+[2024.04.11-20.12.40:286][ 39]LogEditorTransaction: Undo Duplicate Elements
+[2024.04.11-20.12.40:823][ 55]Cmd: TRANSACTION UNDO
+[2024.04.11-20.12.40:823][ 55]LogEditorTransaction: Undo Select All
+[2024.04.11-20.13.25:066][416]Cmd: POLY SELECT ADJACENT WALLS
+[2024.04.11-20.16.15:850][478]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.04.11-20.16.15:880][478]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.04.11-20.16.15:883][478]PIE: New page: PIE session: Minimal_Default (Apr 11, 2024, 6:16:15 AM)
+[2024.04.11-20.16.15:899][478]LogOnline: OSS: Created online subsystem instance for: NULL
+[2024.04.11-20.16.15:900][478]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for type [NULL]
+[2024.04.11-20.16.15:902][478]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Minimal_Default
+[2024.04.11-20.16.15:907][478]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004109s)
+[2024.04.11-20.16.15:907][478]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Minimal_Default.Minimal_Default to /Game/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.004226s)
+[2024.04.11-20.16.15:916][478]LogUObjectHash: Compacting FUObjectHashTables data took   0.81ms
+[2024.04.11-20.16.15:920][478]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.11-20.16.15:920][478]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.11-20.16.15:921][478]LogAIModule: Creating AISystem for world Minimal_Default
+[2024.04.11-20.16.15:922][478]LogPlayLevel: PIE: World Init took: (0.003686s)
+[2024.04.11-20.16.15:923][478]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Unique, Realtime: True
+[2024.04.11-20.16.15:923][478]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.04.11-20.16.15:923][478]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.04.11-20.16.15:923][478]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.04.11-20.16.15:923][478]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.04.11-20.16.15:923][478]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.04.11-20.16.15:923][478]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.04.11-20.16.15:923][478]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.04.11-20.16.15:923][478]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.04.11-20.16.15:925][478]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.04.11-20.16.15:925][478]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.04.11-20.16.15:925][478]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.04.11-20.16.15:927][478]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.04.11-20.16.15:968][478]LogAudioMixer: Display: Using Audio Hardware Device Speaker (Realtek(R) Audio)
+[2024.04.11-20.16.15:968][478]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.04.11-20.16.15:968][478]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.04.11-20.16.15:968][478]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.04.11-20.16.15:969][478]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=2
+[2024.04.11-20.16.15:969][478]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=2
+[2024.04.11-20.16.15:971][478]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=2
+[2024.04.11-20.16.15:971][478]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=2
+[2024.04.11-20.16.15:971][478]LogInit: FAudioDevice initialized with ID 2.
+[2024.04.11-20.16.15:971][478]LogAudio: Display: Audio Device (ID: 2) registered with world 'Minimal_Default'.
+[2024.04.11-20.16.15:972][478]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 2
+[2024.04.11-20.16.15:985][478]LogLoad: Game class is 'GameModeBase'
+[2024.04.11-20.16.15:985][478]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 60) at 2024.04.11-13.16.15
+[2024.04.11-20.16.15:989][478]LogWorld: Bringing up level for play took: 0.003158
+[2024.04.11-20.16.15:991][478]LogOnline: OSS: Created online subsystem instance for: :Context_3
+[2024.04.11-20.16.16:045][478]PIE: Server logged in
+[2024.04.11-20.16.16:047][478]PIE: Play in editor total start time 0.176 seconds.
+[2024.04.11-20.16.32:569][430]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.04.11-20.16.32:570][430]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Minimal_Default
+[2024.04.11-20.16.32:570][430]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2024.04.11-20.16.32:571][430]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.11-20.16.32:577][430]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.04.11-20.16.32:584][430]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.11-20.16.32:589][430]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.04.11-20.16.32:591][430]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 2
+[2024.04.11-20.16.32:592][430]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=2
+[2024.04.11-20.16.32:596][430]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=2
+[2024.04.11-20.16.32:605][430]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.04.11-20.16.32:609][430]LogUObjectHash: Compacting FUObjectHashTables data took   0.78ms
+[2024.04.11-20.16.32:707][431]LogPlayLevel: Display: Destroying online subsystem :Context_3
+[2024.04.11-20.16.50:284][911]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.04.11-20.16.50:298][911]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.04.11-20.16.50:299][911]PIE: New page: PIE session: Minimal_Default (Apr 11, 2024, 6:16:50 AM)
+[2024.04.11-20.16.50:299][911]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Minimal_Default
+[2024.04.11-20.16.50:312][911]LogPlayLevel: PIE: StaticDuplicateObject took: (0.013191s)
+[2024.04.11-20.16.50:312][911]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Minimal_Default.Minimal_Default to /Game/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.013334s)
+[2024.04.11-20.16.50:327][911]LogUObjectHash: Compacting FUObjectHashTables data took   1.98ms
+[2024.04.11-20.16.50:329][911]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.11-20.16.50:329][911]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.11-20.16.50:330][911]LogAIModule: Creating AISystem for world Minimal_Default
+[2024.04.11-20.16.50:331][911]LogPlayLevel: PIE: World Init took: (0.002079s)
+[2024.04.11-20.16.50:331][911]LogAudio: Display: Creating Audio Device:                 Id: 3, Scope: Unique, Realtime: True
+[2024.04.11-20.16.50:331][911]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.04.11-20.16.50:331][911]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.04.11-20.16.50:331][911]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.04.11-20.16.50:331][911]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.04.11-20.16.50:331][911]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.04.11-20.16.50:331][911]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.04.11-20.16.50:331][911]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.04.11-20.16.50:331][911]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.04.11-20.16.50:333][911]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.04.11-20.16.50:333][911]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.04.11-20.16.50:333][911]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.04.11-20.16.50:336][911]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.04.11-20.16.50:375][911]LogAudioMixer: Display: Using Audio Hardware Device Speaker (Realtek(R) Audio)
+[2024.04.11-20.16.50:376][911]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.04.11-20.16.50:376][911]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.04.11-20.16.50:376][911]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.04.11-20.16.50:377][911]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=3
+[2024.04.11-20.16.50:377][911]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=3
+[2024.04.11-20.16.50:381][911]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=3
+[2024.04.11-20.16.50:381][911]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=3
+[2024.04.11-20.16.50:381][911]LogInit: FAudioDevice initialized with ID 3.
+[2024.04.11-20.16.50:381][911]LogAudio: Display: Audio Device (ID: 3) registered with world 'Minimal_Default'.
+[2024.04.11-20.16.50:381][911]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 3
+[2024.04.11-20.16.50:383][911]LogLoad: Game class is 'GameModeBase'
+[2024.04.11-20.16.50:385][911]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 60) at 2024.04.11-13.16.50
+[2024.04.11-20.16.50:385][911]LogWorld: Bringing up level for play took: 0.001058
+[2024.04.11-20.16.50:388][911]LogOnline: OSS: Created online subsystem instance for: :Context_4
+[2024.04.11-20.16.50:389][911]PIE: Server logged in
+[2024.04.11-20.16.50:390][911]PIE: Play in editor total start time 0.092 seconds.
+[2024.04.11-20.17.24:937][950]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.04.11-20.17.24:937][950]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Minimal_Default
+[2024.04.11-20.17.24:937][950]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2024.04.11-20.17.24:937][950]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.11-20.17.24:944][950]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.04.11-20.17.24:950][950]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.11-20.17.24:958][950]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.04.11-20.17.24:958][950]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 3
+[2024.04.11-20.17.24:958][950]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=3
+[2024.04.11-20.17.24:962][950]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=3
+[2024.04.11-20.17.24:971][950]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
+[2024.04.11-20.17.25:062][951]LogPlayLevel: Display: Destroying online subsystem :Context_4
+[2024.04.11-20.17.30:121][ 70]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@2] File [Scalability]
+[2024.04.11-20.17.30:121][ 70]LogConfig: Set CVar [[r.SkeletalMeshLODBias:0]]
+[2024.04.11-20.17.30:121][ 70]LogConfig: Set CVar [[r.ViewDistanceScale:0.8]]
+[2024.04.11-20.17.30:121][ 70]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@2] File [Scalability]
+[2024.04.11-20.17.30:121][ 70]LogConfig: Set CVar [[r.FXAA.Quality:3]]
+[2024.04.11-20.17.30:121][ 70]LogConfig: Set CVar [[r.TemporalAA.Quality:1]]
+[2024.04.11-20.17.30:121][ 70]LogConfig: Set CVar [[r.TSR.History.UpdateQuality:2]]
+[2024.04.11-20.17.30:121][ 70]LogConfig: Set CVar [[r.TSR.ShadingRejection.Flickering:1]]
+[2024.04.11-20.17.30:121][ 70]LogConfig: Set CVar [[r.TSR.ShadingRejection.TileOverscan:3]]
+[2024.04.11-20.17.30:121][ 70]LogConfig: CVar [[r.TSR.Velocity.Extrapolation:0]] deferred - dummy variable created
+[2024.04.11-20.17.30:121][ 70]LogConfig: Set CVar [[r.TSR.RejectionAntiAliasingQuality:1]]
+[2024.04.11-20.17.30:121][ 70]LogConfig: Applying CVar settings from Section [ShadowQuality@2] File [Scalability]
+[2024.04.11-20.17.30:121][ 70]LogConfig: Set CVar [[r.LightFunctionQuality:1]]
+[2024.04.11-20.17.30:121][ 70]LogConfig: Set CVar [[r.ShadowQuality:5]]
+[2024.04.11-20.17.30:121][ 70]LogConfig: Set CVar [[r.Shadow.CSM.MaxCascades:4]]
+[2024.04.11-20.17.30:121][ 70]LogConfig: Set CVar [[r.Shadow.MaxResolution:1024]]
+[2024.04.11-20.17.30:121][ 70]LogConfig: Set CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2024.04.11-20.17.30:121][ 70]LogConfig: Set CVar [[r.Shadow.RadiusThreshold:0.04]]
+[2024.04.11-20.17.30:121][ 70]LogConfig: Set CVar [[r.Shadow.DistanceScale:0.85]]
+[2024.04.11-20.17.30:121][ 70]LogConfig: Set CVar [[r.Shadow.CSM.TransitionScale:0.8]]
+[2024.04.11-20.17.30:121][ 70]LogConfig: Set CVar [[r.DistanceFieldShadowing:1]]
+[2024.04.11-20.17.30:121][ 70]LogConfig: Set CVar [[r.VolumetricFog:1]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.VolumetricFog.GridPixelSize:16]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.VolumetricFog.GridSizeZ:64]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.LightMaxDrawDistanceScale:1]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.CapsuleShadows:1]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Shadow.Virtual.MaxPhysicalPages:2048]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasDirectional:-0.5]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasDirectionalMoving:-0.5]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasLocal:0.0]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasLocalMoving:1.0]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.RayCountDirectional:8]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.SamplesPerRayDirectional:4]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.RayCountLocal:8]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.SamplesPerRayLocal:4]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Applying CVar settings from Section [GlobalIlluminationQuality@2] File [Scalability]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.DistanceFieldAO:1]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.AOQuality:1]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Lumen.DiffuseIndirect.Allow:1]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.LumenScene.Radiosity.ProbeSpacing:8]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.LumenScene.Radiosity.HemisphereProbeResolution:3]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Lumen.TraceMeshSDFs.Allow:0]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.RadianceCache.ProbeResolution:16]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.DownsampleFactor:32]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.IrradianceFormat:1]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.StochasticInterpolation:1]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.TwoSidedFoliageBackfaceDiffuse:0]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.ScreenTraces.HZBTraversal.FullResDepth:0]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.GridPixelSize:64]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.TraceFromVolume:0]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Applying CVar settings from Section [ReflectionQuality@2] File [Scalability]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.SSR.Quality:2]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Lumen.Reflections.Allow:1]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Lumen.Reflections.DownsampleFactor:2]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Lumen.Reflections.MaxRoughnessToTraceForFoliage:0.2]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Lumen.Reflections.ScreenSpaceReconstruction.TonemapStrength:1]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Lumen.TranslucencyReflections.FrontLayer.Allow:0]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Applying CVar settings from Section [PostProcessQuality@2] File [Scalability]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.MotionBlurQuality:3]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.MotionBlur.HalfResGather:0]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.AmbientOcclusionMipLevelFactor:0.6]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.AmbientOcclusionLevels:-1]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.AmbientOcclusionRadiusScale:1.5]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.DepthOfFieldQuality:2]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.RenderTargetPoolMin:400]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.LensFlareQuality:2]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.SceneColorFringeQuality:1]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.BloomQuality:5]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Bloom.ScreenPercentage:50.000]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.FastBlurThreshold:3]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Upscale.Quality:2]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.LightShaftQuality:1]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Filter.SizeScale:0.8]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Tonemapper.Quality:5]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.DOF.Gather.AccumulatorQuality:0        ; lower gathering accumulator quality]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.DOF.Gather.PostfilterMethod:2          ; Max3x3 postfilering method]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.DOF.Scatter.BackgroundCompositing:1    ; no background occlusion]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.DOF.Scatter.EnableBokehSettings:0      ; no bokeh simulation when scattering]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.DOF.Scatter.MaxSpriteRatio:0.04        ; only a maximum of 4% of scattered bokeh]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.DOF.Recombine.Quality:0                ; no slight out of focus]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.DOF.TemporalAAQuality:0                ; faster temporal accumulation]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.DOF.Kernel.MaxForegroundRadius:0.012   ; required because of AccumulatorQuality=0]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.012   ; required because of AccumulatorQuality=0]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Applying CVar settings from Section [TextureQuality@2] File [Scalability]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Streaming.MipBias:0]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Streaming.Boost:1]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.MaxAnisotropy:4]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.VT.MaxAnisotropy:8]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.Streaming.PoolSize:800]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Applying CVar settings from Section [EffectsQuality@2] File [Scalability]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.TranslucencyLightingVolumeDim:48]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.RefractionQuality:2]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.DetailMode:1]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.TranslucencyVolumeBlur:1]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.SSS.Scale:1]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.SSS.SampleSet:1]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.SSS.Quality:-1]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.SSGI.Quality:2]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.EmitterSpawnRateScale:0.5]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.ParticleLightQuality:1]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:2]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:64.0]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.SkyAtmosphere.SampleCountMax:64.0]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[fx.Niagara.QualityLevel:2]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Applying CVar settings from Section [FoliageQuality@2] File [Scalability]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[foliage.DensityScale:0.8]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[grass.DensityScale:0.8]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Applying CVar settings from Section [ShadingQuality@2] File [Scalability]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2024.04.11-20.17.30:122][ 70]LogConfig: Set CVar [[r.AnisotropicMaterials:1]]
+[2024.04.11-20.17.30:174][ 70]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2024.04.11-20.17.30:175][ 70]LogContentStreaming: Texture pool size now 800 MB
+[2024.04.11-20.17.36:432][120]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.04.11-20.17.36:452][120]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.04.11-20.17.36:452][120]PIE: New page: PIE session: Minimal_Default (Apr 11, 2024, 6:17:36 AM)
+[2024.04.11-20.17.36:452][120]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Minimal_Default
+[2024.04.11-20.17.36:458][120]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004960s)
+[2024.04.11-20.17.36:458][120]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Minimal_Default.Minimal_Default to /Game/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005036s)
+[2024.04.11-20.17.36:476][120]LogUObjectHash: Compacting FUObjectHashTables data took   1.77ms
+[2024.04.11-20.17.36:482][120]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.11-20.17.36:482][120]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.11-20.17.36:483][120]LogAIModule: Creating AISystem for world Minimal_Default
+[2024.04.11-20.17.36:484][120]LogPlayLevel: PIE: World Init took: (0.002635s)
+[2024.04.11-20.17.36:484][120]LogAudio: Display: Creating Audio Device:                 Id: 4, Scope: Unique, Realtime: True
+[2024.04.11-20.17.36:484][120]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.04.11-20.17.36:484][120]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.04.11-20.17.36:484][120]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.04.11-20.17.36:484][120]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.04.11-20.17.36:485][120]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.04.11-20.17.36:485][120]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.04.11-20.17.36:485][120]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.04.11-20.17.36:485][120]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.04.11-20.17.36:485][120]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.04.11-20.17.36:485][120]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.04.11-20.17.36:485][120]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.04.11-20.17.36:491][120]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.04.11-20.17.36:534][120]LogAudioMixer: Display: Using Audio Hardware Device Speaker (Realtek(R) Audio)
+[2024.04.11-20.17.36:535][120]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.04.11-20.17.36:536][120]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.04.11-20.17.36:536][120]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.04.11-20.17.36:539][120]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=4
+[2024.04.11-20.17.36:540][120]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=4
+[2024.04.11-20.17.36:549][120]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=4
+[2024.04.11-20.17.36:549][120]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=4
+[2024.04.11-20.17.36:549][120]LogInit: FAudioDevice initialized with ID 4.
+[2024.04.11-20.17.36:549][120]LogAudio: Display: Audio Device (ID: 4) registered with world 'Minimal_Default'.
+[2024.04.11-20.17.36:549][120]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 4
+[2024.04.11-20.17.36:557][120]LogLoad: Game class is 'GameModeBase'
+[2024.04.11-20.17.36:558][120]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 60) at 2024.04.11-13.17.36
+[2024.04.11-20.17.36:559][120]LogWorld: Bringing up level for play took: 0.001281
+[2024.04.11-20.17.36:562][120]LogOnline: OSS: Created online subsystem instance for: :Context_5
+[2024.04.11-20.17.36:565][120]PIE: Server logged in
+[2024.04.11-20.17.36:567][120]PIE: Play in editor total start time 0.116 seconds.
+[2024.04.11-20.17.47:899][366]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.04.11-20.17.47:899][366]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Minimal_Default
+[2024.04.11-20.17.47:900][366]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2024.04.11-20.17.47:900][366]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.11-20.17.47:945][366]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.04.11-20.17.47:948][366]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.11-20.17.47:958][366]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.04.11-20.17.47:959][366]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 4
+[2024.04.11-20.17.47:959][366]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4
+[2024.04.11-20.17.47:965][366]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4
+[2024.04.11-20.17.47:980][366]LogUObjectHash: Compacting FUObjectHashTables data took   1.84ms
+[2024.04.11-20.17.48:104][367]LogPlayLevel: Display: Destroying online subsystem :Context_5
+[2024.04.11-20.17.52:488][429]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@0] File [Scalability]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.SkeletalMeshLODBias:2]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.ViewDistanceScale:0.4]]
+[2024.04.11-20.17.52:489][429]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@0] File [Scalability]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.FXAA.Quality:0]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.TemporalAA.Quality:0]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.TSR.History.UpdateQuality:0]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.TSR.ShadingRejection.Flickering:0]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.TSR.ShadingRejection.TileOverscan:2]]
+[2024.04.11-20.17.52:489][429]LogConfig: CVar [[r.TSR.Velocity.Extrapolation:0]] deferred - dummy variable created
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.TSR.RejectionAntiAliasingQuality:0]]
+[2024.04.11-20.17.52:489][429]LogConfig: Applying CVar settings from Section [ShadowQuality@0] File [Scalability]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.LightFunctionQuality:0]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.ShadowQuality:0]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.Shadow.CSM.MaxCascades:1]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.Shadow.MaxResolution:512]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.Shadow.MaxCSMResolution:512]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.Shadow.RadiusThreshold:0.06]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.Shadow.DistanceScale:0.6]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.Shadow.CSM.TransitionScale:0]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.DistanceFieldShadowing:0]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.VolumetricFog:0]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.LightMaxDrawDistanceScale:0]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.CapsuleShadows:0]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.Shadow.Virtual.MaxPhysicalPages:512]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasDirectional:0.0]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasDirectionalMoving:0.0]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasLocal:1.0]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasLocalMoving:2.0]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.RayCountDirectional:0]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.SamplesPerRayDirectional:2]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.RayCountLocal:0]]
+[2024.04.11-20.17.52:489][429]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.SamplesPerRayLocal:2]]
+[2024.04.11-20.17.52:490][429]LogConfig: Applying CVar settings from Section [GlobalIlluminationQuality@0] File [Scalability]
+[2024.04.11-20.17.52:490][429]LogConfig: Set CVar [[r.DistanceFieldAO:0]]
+[2024.04.11-20.17.52:490][429]LogConfig: Set CVar [[r.Lumen.DiffuseIndirect.Allow:0]]
+[2024.04.11-20.17.52:490][429]LogConfig: Applying CVar settings from Section [ReflectionQuality@0] File [Scalability]
+[2024.04.11-20.17.52:490][429]LogConfig: Set CVar [[r.SSR.Quality:0]]
+[2024.04.11-20.17.52:490][429]LogConfig: Set CVar [[r.Lumen.Reflections.Allow:0]]
+[2024.04.11-20.17.52:490][429]LogConfig: Applying CVar settings from Section [PostProcessQuality@0] File [Scalability]
+[2024.04.11-20.17.52:490][429]LogConfig: Set CVar [[r.MotionBlurQuality:0]]
+[2024.04.11-20.17.52:490][429]LogConfig: Set CVar [[r.MotionBlur.HalfResGather:1]]
+[2024.04.11-20.17.52:490][429]LogConfig: Set CVar [[r.AmbientOcclusionMipLevelFactor:1.0]]
+[2024.04.11-20.17.52:490][429]LogConfig: Set CVar [[r.AmbientOcclusionMaxQuality:0]]
+[2024.04.11-20.17.52:490][429]LogConfig: Set CVar [[r.AmbientOcclusionLevels:0]]
+[2024.04.11-20.17.52:490][429]LogConfig: Set CVar [[r.AmbientOcclusionRadiusScale:1.2]]
+[2024.04.11-20.17.52:490][429]LogConfig: Set CVar [[r.DepthOfFieldQuality:0]]
+[2024.04.11-20.17.52:490][429]LogConfig: Set CVar [[r.RenderTargetPoolMin:300]]
+[2024.04.11-20.17.52:490][429]LogConfig: Set CVar [[r.LensFlareQuality:0]]
+[2024.04.11-20.17.52:490][429]LogConfig: Set CVar [[r.SceneColorFringeQuality:0]]
+[2024.04.11-20.17.52:490][429]LogConfig: Set CVar [[r.BloomQuality:4]]
+[2024.04.11-20.17.52:490][429]LogConfig: Set CVar [[r.Bloom.ScreenPercentage:25.000]]
+[2024.04.11-20.17.52:490][429]LogConfig: Set CVar [[r.FastBlurThreshold:0]]
+[2024.04.11-20.17.52:490][429]LogConfig: Set CVar [[r.Upscale.Quality:1]]
+[2024.04.11-20.17.52:490][429]LogConfig: Set CVar [[r.LightShaftQuality:0]]
+[2024.04.11-20.17.52:490][429]LogConfig: Set CVar [[r.Filter.SizeScale:0.6]]
+[2024.04.11-20.17.52:490][429]LogConfig: Set CVar [[r.Tonemapper.Quality:0]]
+[2024.04.11-20.17.52:491][429]LogConfig: Applying CVar settings from Section [TextureQuality@0] File [Scalability]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.Streaming.MipBias:16]]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.Streaming.AmortizeCPUToGPUCopy:1]]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:1]]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.Streaming.Boost:0.3]]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.MaxAnisotropy:0]]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.VT.MaxAnisotropy:4]]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.Streaming.PoolSize:400]]
+[2024.04.11-20.17.52:491][429]LogConfig: Applying CVar settings from Section [EffectsQuality@0] File [Scalability]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.TranslucencyLightingVolumeDim:24]]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.RefractionQuality:0]]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.DetailMode:0]]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.TranslucencyVolumeBlur:0]]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.MaterialQualityLevel:0 ; Low quality]]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.SSS.Scale:0]]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.SSS.SampleSet:0]]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.SSS.Quality:0]]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.SSGI.Quality:0]]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.EmitterSpawnRateScale:0.125]]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.ParticleLightQuality:0]]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:1]]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:8.0]]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:2.0]]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:16.0]]
+[2024.04.11-20.17.52:491][429]LogConfig: Set CVar [[r.SkyAtmosphere.SampleCountMin:2.0]]
+[2024.04.11-20.17.52:492][429]LogConfig: Set CVar [[r.SkyAtmosphere.SampleCountMax:16.0]]
+[2024.04.11-20.17.52:492][429]LogConfig: Set CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:1]]
+[2024.04.11-20.17.52:492][429]LogConfig: Set CVar [[r.SkyLight.RealTimeReflectionCapture:0]]
+[2024.04.11-20.17.52:492][429]LogConfig: Set CVar [[fx.Niagara.QualityLevel:0]]
+[2024.04.11-20.17.52:492][429]LogConfig: Applying CVar settings from Section [FoliageQuality@0] File [Scalability]
+[2024.04.11-20.17.52:492][429]LogConfig: Set CVar [[foliage.DensityScale:0]]
+[2024.04.11-20.17.52:492][429]LogConfig: Set CVar [[grass.DensityScale:0]]
+[2024.04.11-20.17.52:492][429]LogConfig: Applying CVar settings from Section [ShadingQuality@0] File [Scalability]
+[2024.04.11-20.17.52:492][429]LogConfig: Set CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:1]]
+[2024.04.11-20.17.52:492][429]LogConfig: Set CVar [[r.AnisotropicMaterials:0]]
+[2024.04.11-20.17.52:575][429]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2024.04.11-20.17.52:996][434]LogContentStreaming: Texture pool size now 400 MB
+[2024.04.11-20.18.29:979][407]LogUObjectHash: Compacting FUObjectHashTables data took   0.96ms
+[2024.04.11-20.32.59:622][616]LogHttp: Warning: 0000050127D1FA00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2024.04.11-20.32.59:622][616]LogHttp: Warning: 0000050127D1FA00: libcurl info message cache 0 (Found bundle for host: 0x500f3950000 [serially])
+[2024.04.11-20.32.59:622][616]LogHttp: Warning: 0000050127D1FA00: libcurl info message cache 1 (Re-using existing connection with host datarouter.ol.epicgames.com)
+[2024.04.11-20.32.59:622][616]LogHttp: Warning: 0000050127D1FA00: libcurl info message cache 2 (We are completely uploaded and fine)
+[2024.04.11-20.32.59:622][616]LogHttp: Warning: 0000050127D1FA00: libcurl info message cache 3 (Recv failure: Connection was reset)
+[2024.04.11-20.32.59:622][616]LogHttp: Warning: 0000050127D1FA00: libcurl info message cache 4 (OpenSSL SSL_read: Connection was reset, errno 10054)
+[2024.04.11-20.32.59:622][616]LogHttp: Warning: 0000050127D1FA00: libcurl info message cache 5 (Connection died, retrying a fresh connect (retry count: 1))
+[2024.04.11-20.32.59:622][616]LogHttp: Warning: 0000050127D1FA00: libcurl info message cache 6 (state.rewindbeforesend = TRUE)
+[2024.04.11-20.32.59:622][616]LogHttp: Warning: 0000050127D1FA00: libcurl info message cache 7 (Closing connection)
+[2024.04.11-20.32.59:622][616]LogHttp: Warning: 0000050127D1FA00: libcurl info message cache 8 (Recv failure: Connection was reset)
+[2024.04.11-20.32.59:622][616]LogHttp: Warning: 0000050127D1FA00: libcurl info message cache 9 (Send failure: Connection was reset)
+[2024.04.11-20.32.59:622][616]LogHttp: Warning: 0000050127D1FA00: libcurl info message cache 10 (Recv failure: Connection was reset)
+[2024.04.11-20.32.59:622][616]LogHttp: Warning: 0000050127D1FA00: libcurl info message cache 11 (Issue another request to this URL: 'https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream')
+[2024.04.11-20.32.59:623][616]LogHttp: Warning: 0000050127D1FA00: libcurl info message cache 12 (Could not resolve host: datarouter.ol.epicgames.com)
+[2024.04.11-20.32.59:623][616]LogHttp: Warning: 0000050127D1FA00: libcurl info message cache 13 (Closing connection)
+[2024.04.11-20.32.59:623][616]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.04.11-20.33.36:796][728]LogHttp: Warning: 0000050127D1B900: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2024.04.11-20.33.36:796][728]LogHttp: Warning: 0000050127D1B900: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2024.04.11-20.33.36:796][728]LogHttp: Warning: 0000050127D1B900: libcurl info message cache 1 (Closing connection)
+[2024.04.11-20.33.36:796][728]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.04.11-20.33.40:978][740]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.34.15:304][843]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.34.36:856][908]LogHttp: Warning: 0000050127D1F500: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2024.04.11-20.34.36:856][908]LogHttp: Warning: 0000050127D1F500: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2024.04.11-20.34.36:856][908]LogHttp: Warning: 0000050127D1F500: libcurl info message cache 1 (Closing connection)
+[2024.04.11-20.34.36:856][908]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.04.11-20.35.28:657][ 63]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.35.36:817][ 88]LogHttp: Warning: 0000050127D1E100: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2024.04.11-20.35.36:817][ 88]LogHttp: Warning: 0000050127D1E100: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2024.04.11-20.35.36:817][ 88]LogHttp: Warning: 0000050127D1E100: libcurl info message cache 1 (Closing connection)
+[2024.04.11-20.35.36:817][ 88]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.04.11-20.35.59:987][157]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.36.15:327][203]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.36.32:991][256]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.36.36:823][268]LogHttp: Warning: 0000050127D1FA00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2024.04.11-20.36.36:823][268]LogHttp: Warning: 0000050127D1FA00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2024.04.11-20.36.36:825][268]LogHttp: Warning: 0000050127D1FA00: libcurl info message cache 1 (Closing connection)
+[2024.04.11-20.36.36:825][268]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.04.11-20.37.04:662][351]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.37.15:663][384]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.37.34:339][440]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.37.36:980][448]LogHttp: Warning: 0000050127D17D00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2024.04.11-20.37.36:980][448]LogHttp: Warning: 0000050127D17D00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2024.04.11-20.37.36:980][448]LogHttp: Warning: 0000050127D17D00: libcurl info message cache 1 (Closing connection)
+[2024.04.11-20.37.36:980][448]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.04.11-20.37.58:672][513]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.38.04:669][531]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.38.36:840][628]LogHttp: Warning: 0000050127D1B900: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2024.04.11-20.38.36:840][628]LogHttp: Warning: 0000050127D1B900: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2024.04.11-20.38.36:840][628]LogHttp: Warning: 0000050127D1B900: libcurl info message cache 1 (Closing connection)
+[2024.04.11-20.38.36:840][628]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.04.11-20.39.10:680][729]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.39.19:680][756]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.39.36:850][808]LogHttp: Warning: 0000050127D1F500: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2024.04.11-20.39.36:850][808]LogHttp: Warning: 0000050127D1F500: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2024.04.11-20.39.36:850][808]LogHttp: Warning: 0000050127D1F500: libcurl info message cache 1 (Closing connection)
+[2024.04.11-20.39.36:850][808]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.04.11-20.39.46:694][837]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.39.55:684][864]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.40.36:526][987]LogHttp: Warning: 0000050127D1E100: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2024.04.11-20.40.36:526][987]LogHttp: Warning: 0000050127D1E100: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2024.04.11-20.40.36:526][987]LogHttp: Warning: 0000050127D1E100: libcurl info message cache 1 (Closing connection)
+[2024.04.11-20.40.36:526][987]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.04.11-20.41.14:697][101]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.41.35:373][163]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.41.36:951][168]LogHttp: Warning: 0000050127D1FA00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2024.04.11-20.41.36:952][168]LogHttp: Warning: 0000050127D1FA00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2024.04.11-20.41.36:952][168]LogHttp: Warning: 0000050127D1FA00: libcurl info message cache 1 (Closing connection)
+[2024.04.11-20.41.36:952][168]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.04.11-20.41.59:381][235]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.42.10:385][268]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.42.19:382][295]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.42.36:979][348]LogHttp: Warning: 0000050127D17D00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2024.04.11-20.42.36:980][348]LogHttp: Warning: 0000050127D17D00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2024.04.11-20.42.36:980][348]LogHttp: Warning: 0000050127D17D00: libcurl info message cache 1 (Closing connection)
+[2024.04.11-20.42.36:980][348]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.04.11-20.42.47:721][380]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.43.10:054][447]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.43.29:056][504]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.43.32:730][515]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.43.36:890][528]LogHttp: Warning: 0000050127D1B900: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2024.04.11-20.43.36:890][528]LogHttp: Warning: 0000050127D1B900: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2024.04.11-20.43.36:890][528]LogHttp: Warning: 0000050127D1B900: libcurl info message cache 1 (Closing connection)
+[2024.04.11-20.43.36:890][528]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.04.11-20.43.41:399][541]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.43.46:726][557]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.44.36:952][708]LogHttp: Warning: 0000050127D1F500: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2024.04.11-20.44.36:952][708]LogHttp: Warning: 0000050127D1F500: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2024.04.11-20.44.36:953][708]LogHttp: Warning: 0000050127D1F500: libcurl info message cache 1 (Closing connection)
+[2024.04.11-20.44.36:953][708]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.04.11-20.45.09:070][804]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.45.14:407][820]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.45.36:903][888]LogHttp: Warning: 0000050127D1E100: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2024.04.11-20.45.36:903][888]LogHttp: Warning: 0000050127D1E100: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2024.04.11-20.45.36:903][888]LogHttp: Warning: 0000050127D1E100: libcurl info message cache 1 (Closing connection)
+[2024.04.11-20.45.36:903][888]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.04.11-20.46.36:912][ 68]LogHttp: Warning: 0000050127D1FA00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2024.04.11-20.46.36:912][ 68]LogHttp: Warning: 0000050127D1FA00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2024.04.11-20.46.36:912][ 68]LogHttp: Warning: 0000050127D1FA00: libcurl info message cache 1 (Closing connection)
+[2024.04.11-20.46.36:912][ 68]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.04.11-20.47.31:763][232]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.47.37:053][248]LogHttp: Warning: 0000050127D17D00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2024.04.11-20.47.37:053][248]LogHttp: Warning: 0000050127D17D00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2024.04.11-20.47.37:053][248]LogHttp: Warning: 0000050127D17D00: libcurl info message cache 1 (Closing connection)
+[2024.04.11-20.47.37:053][248]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.04.11-20.48.36:935][428]LogHttp: Warning: 0000050127D1B900: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2024.04.11-20.48.36:935][428]LogHttp: Warning: 0000050127D1B900: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2024.04.11-20.48.36:935][428]LogHttp: Warning: 0000050127D1B900: libcurl info message cache 1 (Closing connection)
+[2024.04.11-20.48.36:935][428]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.04.11-20.49.24:453][570]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-20.49.36:670][607]LogHttp: Warning: 0000050127D1F500: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2024.04.11-20.49.36:671][607]LogHttp: Warning: 0000050127D1F500: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2024.04.11-20.49.36:671][607]LogHttp: Warning: 0000050127D1F500: libcurl info message cache 1 (Closing connection)
+[2024.04.11-20.49.36:671][607]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.04.11-20.50.38:216][977]LogViewport: Scene viewport resized to 1527x845, mode Windowed.
+[2024.04.11-20.50.38:305][978]LogViewport: Scene viewport resized to 1532x845, mode Windowed.
+[2024.04.11-20.50.38:411][979]LogViewport: Scene viewport resized to 1539x845, mode Windowed.
+[2024.04.11-20.50.38:562][980]LogViewport: Scene viewport resized to 1560x845, mode Windowed.
+[2024.04.11-20.50.38:702][981]LogViewport: Scene viewport resized to 1564x845, mode Windowed.
+[2024.04.11-20.50.38:837][982]LogViewport: Scene viewport resized to 1586x845, mode Windowed.
+[2024.04.11-20.50.38:980][983]LogViewport: Scene viewport resized to 1606x845, mode Windowed.
+[2024.04.11-20.50.39:163][984]LogViewport: Scene viewport resized to 1619x845, mode Windowed.
+[2024.04.11-20.50.39:343][985]LogViewport: Scene viewport resized to 1645x845, mode Windowed.
+[2024.04.11-20.50.39:516][986]LogViewport: Scene viewport resized to 1674x845, mode Windowed.
+[2024.04.11-20.50.39:691][987]LogViewport: Scene viewport resized to 1691x845, mode Windowed.
+[2024.04.11-20.50.39:919][988]LogViewport: Scene viewport resized to 1695x845, mode Windowed.
+[2024.04.11-20.50.40:076][989]LogViewport: Scene viewport resized to 1699x845, mode Windowed.
+[2024.04.11-20.50.40:821][  0]LogViewport: Scene viewport resized to 1698x845, mode Windowed.
+[2024.04.11-20.50.41:033][  4]LogViewport: Scene viewport resized to 1697x845, mode Windowed.
+[2024.04.11-20.50.41:210][  7]LogViewport: Scene viewport resized to 1696x845, mode Windowed.
+[2024.04.11-20.50.41:311][  8]LogViewport: Scene viewport resized to 1693x845, mode Windowed.
+[2024.04.11-20.50.41:411][  9]LogViewport: Scene viewport resized to 1687x845, mode Windowed.
+[2024.04.11-20.50.41:539][ 11]LogViewport: Scene viewport resized to 1685x845, mode Windowed.
+[2024.04.11-20.50.41:620][ 12]LogViewport: Scene viewport resized to 1682x845, mode Windowed.
+[2024.04.11-20.50.41:700][ 13]LogViewport: Scene viewport resized to 1680x845, mode Windowed.
+[2024.04.11-20.50.42:302][ 26]LogViewport: Scene viewport resized to 1679x845, mode Windowed.
+[2024.04.11-20.50.42:410][ 27]LogViewport: Scene viewport resized to 1676x845, mode Windowed.
+[2024.04.11-20.50.42:473][ 28]LogViewport: Scene viewport resized to 1671x845, mode Windowed.
+[2024.04.11-20.50.42:560][ 29]LogViewport: Scene viewport resized to 1667x845, mode Windowed.
+[2024.04.11-20.50.42:653][ 30]LogViewport: Scene viewport resized to 1665x845, mode Windowed.
+[2024.04.11-20.50.52:639][243]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.04.11-20.50.52:653][243]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.04.11-20.50.52:653][243]PIE: New page: PIE session: Minimal_Default (Apr 11, 2024, 6:50:52 AM)
+[2024.04.11-20.50.52:653][243]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Minimal_Default
+[2024.04.11-20.50.52:661][243]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006735s)
+[2024.04.11-20.50.52:661][243]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Minimal_Default.Minimal_Default to /Game/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.006905s)
+[2024.04.11-20.50.52:676][243]LogUObjectHash: Compacting FUObjectHashTables data took   2.11ms
+[2024.04.11-20.50.52:678][243]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.11-20.50.52:679][243]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.11-20.50.52:679][243]LogAIModule: Creating AISystem for world Minimal_Default
+[2024.04.11-20.50.52:680][243]LogPlayLevel: PIE: World Init took: (0.002166s)
+[2024.04.11-20.50.52:681][243]LogAudio: Display: Creating Audio Device:                 Id: 5, Scope: Unique, Realtime: True
+[2024.04.11-20.50.52:681][243]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.04.11-20.50.52:681][243]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.04.11-20.50.52:681][243]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.04.11-20.50.52:681][243]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.04.11-20.50.52:681][243]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.04.11-20.50.52:681][243]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.04.11-20.50.52:681][243]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.04.11-20.50.52:681][243]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.04.11-20.50.52:683][243]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.04.11-20.50.52:683][243]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.04.11-20.50.52:683][243]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.04.11-20.50.52:687][243]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.04.11-20.50.52:730][243]LogAudioMixer: Display: Using Audio Hardware Device Speaker (Realtek(R) Audio)
+[2024.04.11-20.50.52:732][243]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.04.11-20.50.52:732][243]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.04.11-20.50.52:732][243]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.04.11-20.50.52:733][243]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=5
+[2024.04.11-20.50.52:733][243]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=5
+[2024.04.11-20.50.52:735][243]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=5
+[2024.04.11-20.50.52:735][243]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=5
+[2024.04.11-20.50.52:735][243]LogInit: FAudioDevice initialized with ID 5.
+[2024.04.11-20.50.52:735][243]LogAudio: Display: Audio Device (ID: 5) registered with world 'Minimal_Default'.
+[2024.04.11-20.50.52:735][243]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 5
+[2024.04.11-20.50.52:737][243]LogLoad: Game class is 'GameModeBase'
+[2024.04.11-20.50.52:738][243]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2024.04.11-13.50.52
+[2024.04.11-20.50.52:738][243]LogWorld: Bringing up level for play took: 0.001110
+[2024.04.11-20.50.52:742][243]LogOnline: OSS: Created online subsystem instance for: :Context_6
+[2024.04.11-20.50.52:743][243]PIE: Server logged in
+[2024.04.11-20.50.52:745][243]PIE: Play in editor total start time 0.092 seconds.
+[2024.04.11-20.51.05:968][979]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.04.11-20.51.05:969][979]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Minimal_Default
+[2024.04.11-20.51.05:969][979]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2024.04.11-20.51.05:969][979]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.11-20.51.05:974][979]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.04.11-20.51.05:978][979]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.11-20.51.05:986][979]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.04.11-20.51.05:987][979]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 5
+[2024.04.11-20.51.05:987][979]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=5
+[2024.04.11-20.51.05:989][979]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=5
+[2024.04.11-20.51.05:999][979]LogUObjectHash: Compacting FUObjectHashTables data took   0.85ms
+[2024.04.11-20.51.06:099][980]LogPlayLevel: Display: Destroying online subsystem :Context_6
+[2024.04.11-20.56.06:342][182]Cmd: POLY SELECT MEMORY UNION
+[2024.04.11-21.04.03:098][456]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.04.25:104][522]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.04.33:101][546]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.04.55:446][613]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.05.28:448][712]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.05.33:029][726]LogDerivedDataCache: C:/Users/Kette/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:03.069 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 1883 files in 2858 folders with total size 23 MiB.
+[2024.04.11-21.05.40:116][747]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.05.54:119][789]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.06.23:456][877]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.06.40:463][928]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.06.49:460][955]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.07.26:132][ 65]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.08.25:807][244]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.08.35:142][272]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.08.42:481][294]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.08.54:146][329]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.09.01:481][351]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.09.28:150][431]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.09.48:490][492]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.10.24:832][601]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.10.29:833][616]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.10.42:837][655]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.10.51:001][680]LogHttp: Warning: 0000050127CC2800: request failed, libcurl error: 65 (Send failed since rewinding of the data stream failed)
+[2024.04.11-21.10.51:001][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 0 (Found bundle for host: 0x500f3950870 [serially])
+[2024.04.11-21.10.51:001][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 1 (Re-using existing connection with host datarouter.ol.epicgames.com)
+[2024.04.11-21.10.51:001][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 2 (We are completely uploaded and fine)
+[2024.04.11-21.10.51:001][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 3 (TLSv1.2 (IN), TLS alert, close notify (256):)
+[2024.04.11-21.10.51:001][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 4 (Connection died, retrying a fresh connect (retry count: 1))
+[2024.04.11-21.10.51:001][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 5 (state.rewindbeforesend = TRUE)
+[2024.04.11-21.10.51:001][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 6 (Closing connection)
+[2024.04.11-21.10.51:001][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 7 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.04.11-21.10.51:001][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 8 (Issue another request to this URL: 'https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream')
+[2024.04.11-21.10.51:001][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 9 (  Trying [2607:7700:0:33:0:1:34c9:bb7d]:443...)
+[2024.04.11-21.10.51:001][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 10 (  Trying 3.225.188.153:443...)
+[2024.04.11-21.10.51:001][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 11 (Connected to datarouter.ol.epicgames.com (2607:7700:0:33:0:1:34c9:bb7d) port 443)
+[2024.04.11-21.10.51:001][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 12 (ALPN: curl offers http/1.1)
+[2024.04.11-21.10.51:001][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 13 (SSL reusing session ID)
+[2024.04.11-21.10.51:001][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 14 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2024.04.11-21.10.51:001][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 15 (TLSv1.3 (IN), TLS handshake, Server hello (2):)
+[2024.04.11-21.10.51:001][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 16 (TLSv1.2 (IN), TLS handshake, Certificate (11):)
+[2024.04.11-21.10.51:001][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 17 (TLSv1.2 (IN), TLS handshake, Server key exchange (12):)
+[2024.04.11-21.10.51:001][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 18 (TLSv1.2 (IN), TLS handshake, Server finished (14):)
+[2024.04.11-21.10.51:001][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 19 (TLSv1.2 (OUT), TLS handshake, Client key exchange (16):)
+[2024.04.11-21.10.51:001][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 20 (TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):)
+[2024.04.11-21.10.51:002][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 21 (TLSv1.2 (OUT), TLS handshake, Finished (20):)
+[2024.04.11-21.10.51:002][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 22 (TLSv1.2 (IN), TLS handshake, Finished (20):)
+[2024.04.11-21.10.51:002][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 23 (old SSL session ID is stale, removing)
+[2024.04.11-21.10.51:002][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 24 (SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256)
+[2024.04.11-21.10.51:002][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 25 (ALPN: server accepted http/1.1)
+[2024.04.11-21.10.51:002][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 26 (Server certificate:)
+[2024.04.11-21.10.51:002][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 27 ( subject: CN=datarouter.cfef.live.use1a.on.epicgames.com)
+[2024.04.11-21.10.51:002][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 28 ( start date: Mar  4 00:00:00 2024 GMT)
+[2024.04.11-21.10.51:002][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 29 ( expire date: Apr  2 23:59:59 2025 GMT)
+[2024.04.11-21.10.51:002][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 30 ( subjectAltName: host "datarouter.ol.epicgames.com" matched cert's "datarouter.ol.epicgames.com")
+[2024.04.11-21.10.51:002][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 31 ( issuer: C=US; O=Amazon; CN=Amazon RSA 2048 M03)
+[2024.04.11-21.10.51:002][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 32 ( SSL certificate verify ok.)
+[2024.04.11-21.10.51:002][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 33 (using HTTP/1.1)
+[2024.04.11-21.10.51:002][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 34 (necessary data rewind wasn't possible)
+[2024.04.11-21.10.51:002][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 35 (Closing connection)
+[2024.04.11-21.10.51:002][680]LogHttp: Warning: 0000050127CC2800: libcurl info message cache 36 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.04.11-21.10.51:002][680]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.04.11-21.11.15:842][754]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.11.27:510][789]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.12.41:522][ 11]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.12.50:526][ 38]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.12.55:525][ 53]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.13.15:862][114]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.13.43:198][196]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.14.15:542][293]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.14.43:207][376]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.15.15:877][474]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.15.50:884][579]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.16.46:893][747]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.17.12:228][823]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.17.23:235][856]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.17.30:231][877]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.17.37:899][900]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.19.23:255][216]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.20.00:928][329]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.21.09:604][535]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.21.39:939][626]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.22.44:795][821]LogHttp: Warning: 0000050127CC8700: request failed, libcurl error: 65 (Send failed since rewinding of the data stream failed)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 0 (Found bundle for host: 0x500f39503f0 [serially])
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 1 (Re-using existing connection with host datarouter.ol.epicgames.com)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 2 (We are completely uploaded and fine)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 3 (TLSv1.2 (IN), TLS alert, close notify (256):)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 4 (Connection died, retrying a fresh connect (retry count: 1))
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 5 (state.rewindbeforesend = TRUE)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 6 (Closing connection)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 7 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 8 (Issue another request to this URL: 'https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream')
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 9 (  Trying [2607:7700:0:33:0:1:2cd0:2f4b]:443...)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 10 (Connected to datarouter.ol.epicgames.com (2607:7700:0:33:0:1:2cd0:2f4b) port 443)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 11 (ALPN: curl offers http/1.1)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 12 (SSL reusing session ID)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 13 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 14 (TLSv1.3 (IN), TLS handshake, Server hello (2):)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 15 (TLSv1.2 (IN), TLS handshake, Certificate (11):)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 16 (TLSv1.2 (IN), TLS handshake, Server key exchange (12):)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 17 (TLSv1.2 (IN), TLS handshake, Server finished (14):)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 18 (TLSv1.2 (OUT), TLS handshake, Client key exchange (16):)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 19 (TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 20 (TLSv1.2 (OUT), TLS handshake, Finished (20):)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 21 (TLSv1.2 (IN), TLS handshake, Finished (20):)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 22 (old SSL session ID is stale, removing)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 23 (SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 24 (ALPN: server accepted http/1.1)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 25 (Server certificate:)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 26 ( subject: CN=datarouter.cfef.live.use1a.on.epicgames.com)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 27 ( start date: Mar  4 00:00:00 2024 GMT)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 28 ( expire date: Apr  2 23:59:59 2025 GMT)
+[2024.04.11-21.22.44:796][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 29 ( subjectAltName: host "datarouter.ol.epicgames.com" matched cert's "datarouter.ol.epicgames.com")
+[2024.04.11-21.22.44:797][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 30 ( issuer: C=US; O=Amazon; CN=Amazon RSA 2048 M03)
+[2024.04.11-21.22.44:797][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 31 ( SSL certificate verify ok.)
+[2024.04.11-21.22.44:797][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 32 (using HTTP/1.1)
+[2024.04.11-21.22.44:797][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 33 (necessary data rewind wasn't possible)
+[2024.04.11-21.22.44:797][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 34 (Closing connection)
+[2024.04.11-21.22.44:797][821]LogHttp: Warning: 0000050127CC8700: libcurl info message cache 35 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.04.11-21.22.44:797][821]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7EE7D706-480D-F424-79A0-E8ADC74A9273%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=070846524649151d9279fcb55ccd776f%7C466b1da32c2a4d82b5fdd22e09a9e73b%7C5b660da7-fa58-488d-abcd-df892c710315&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.04.11-21.25.22:310][293]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.31.53:377][466]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.32.20:713][548]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.34.21:399][910]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.34.35:734][953]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.35.25:748][103]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.35.59:082][203]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.36.25:753][283]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.36.38:763][322]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.38.23:441][636]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.38.46:443][705]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.39.05:446][762]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.39.31:119][839]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.39.37:786][859]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.39.55:788][913]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.40.12:460][963]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.40.17:792][979]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.40.29:461][ 14]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.41.02:134][112]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.41.28:803][192]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.41.35:478][212]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.41.52:473][263]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.42.04:147][298]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.42.32:147][382]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.42.53:817][447]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.43.08:151][490]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.43.18:153][520]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.43.45:496][602]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.44.46:836][786]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.45.10:509][857]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.45.15:510][872]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.45.48:513][971]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s) (ErrorCode 00000001) (00000000)
+[2024.04.11-21.51.28:526][915]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [Scalability]
+[2024.04.11-21.51.28:527][915]LogConfig: Set CVar [[r.SkeletalMeshLODBias:0]]
+[2024.04.11-21.51.28:527][915]LogConfig: Set CVar [[r.ViewDistanceScale:1.0]]
+[2024.04.11-21.51.28:527][915]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [Scalability]
+[2024.04.11-21.51.28:527][915]LogConfig: Set CVar [[r.FXAA.Quality:4]]
+[2024.04.11-21.51.28:527][915]LogConfig: Set CVar [[r.TemporalAA.Quality:2]]
+[2024.04.11-21.51.28:527][915]LogConfig: Set CVar [[r.TSR.History.ScreenPercentage:200]]
+[2024.04.11-21.51.28:527][915]LogConfig: Set CVar [[r.TSR.History.UpdateQuality:3]]
+[2024.04.11-21.51.28:527][915]LogConfig: Set CVar [[r.TSR.ShadingRejection.Flickering:1]]
+[2024.04.11-21.51.28:527][915]LogConfig: Set CVar [[r.TSR.ShadingRejection.TileOverscan:3]]
+[2024.04.11-21.51.28:527][915]LogConfig: CVar [[r.TSR.Velocity.Extrapolation:1]] deferred - dummy variable created
+[2024.04.11-21.51.28:527][915]LogConfig: Set CVar [[r.TSR.RejectionAntiAliasingQuality:2]]
+[2024.04.11-21.51.28:527][915]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [Scalability]
+[2024.04.11-21.51.28:527][915]LogConfig: Set CVar [[r.LightFunctionQuality:1]]
+[2024.04.11-21.51.28:527][915]LogConfig: Set CVar [[r.ShadowQuality:5]]
+[2024.04.11-21.51.28:527][915]LogConfig: Set CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2024.04.11-21.51.28:527][915]LogConfig: Set CVar [[r.Shadow.MaxResolution:2048]]
+[2024.04.11-21.51.28:527][915]LogConfig: Set CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2024.04.11-21.51.28:527][915]LogConfig: Set CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2024.04.11-21.51.28:527][915]LogConfig: Set CVar [[r.Shadow.DistanceScale:1.0]]
+[2024.04.11-21.51.28:527][915]LogConfig: Set CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2024.04.11-21.51.28:527][915]LogConfig: Set CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2024.04.11-21.51.28:527][915]LogConfig: Set CVar [[r.DistanceFieldShadowing:1]]
+[2024.04.11-21.51.28:527][915]LogConfig: Set CVar [[r.VolumetricFog:1]]
+[2024.04.11-21.51.28:528][915]LogConfig: Set CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2024.04.11-21.51.28:528][915]LogConfig: Set CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2024.04.11-21.51.28:528][915]LogConfig: Set CVar [[r.LightMaxDrawDistanceScale:1]]
+[2024.04.11-21.51.28:528][915]LogConfig: Set CVar [[r.CapsuleShadows:1]]
+[2024.04.11-21.51.28:528][915]LogConfig: Set CVar [[r.Shadow.Virtual.MaxPhysicalPages:4096]]
+[2024.04.11-21.51.28:528][915]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasDirectional:-1.5]]
+[2024.04.11-21.51.28:528][915]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasDirectionalMoving:-1.5]]
+[2024.04.11-21.51.28:528][915]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasLocal:0.0]]
+[2024.04.11-21.51.28:528][915]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasLocalMoving:1.0]]
+[2024.04.11-21.51.28:528][915]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.RayCountDirectional:8]]
+[2024.04.11-21.51.28:528][915]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.SamplesPerRayDirectional:4]]
+[2024.04.11-21.51.28:528][915]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.RayCountLocal:8]]
+[2024.04.11-21.51.28:528][915]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.SamplesPerRayLocal:4]]
+[2024.04.11-21.51.28:528][915]LogConfig: Applying CVar settings from Section [GlobalIlluminationQuality@3] File [Scalability]
+[2024.04.11-21.51.28:528][915]LogConfig: Set CVar [[r.DistanceFieldAO:1]]
+[2024.04.11-21.51.28:528][915]LogConfig: Set CVar [[r.AOQuality:2]]
+[2024.04.11-21.51.28:528][915]LogConfig: Set CVar [[r.Lumen.DiffuseIndirect.Allow:1]]
+[2024.04.11-21.51.28:528][915]LogConfig: Set CVar [[r.LumenScene.Radiosity.ProbeSpacing:4]]
+[2024.04.11-21.51.28:528][915]LogConfig: Set CVar [[r.LumenScene.Radiosity.HemisphereProbeResolution:4]]
+[2024.04.11-21.51.28:528][915]LogConfig: Set CVar [[r.Lumen.TraceMeshSDFs.Allow:1]]
+[2024.04.11-21.51.28:528][915]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.RadianceCache.ProbeResolution:32]]
+[2024.04.11-21.51.28:528][915]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.DownsampleFactor:16]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.IrradianceFormat:0]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.StochasticInterpolation:0]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.TwoSidedFoliageBackfaceDiffuse:1]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.ScreenTraces.HZBTraversal.FullResDepth:1]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.GridPixelSize:32]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.TraceFromVolume:1]]
+[2024.04.11-21.51.28:529][915]LogConfig: Applying CVar settings from Section [ReflectionQuality@3] File [Scalability]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.SSR.Quality:3]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.SSR.HalfResSceneColor:0]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.Lumen.Reflections.Allow:1]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.Lumen.Reflections.DownsampleFactor:1]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.Lumen.Reflections.MaxRoughnessToTraceForFoliage:0.4]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.Lumen.Reflections.ScreenSpaceReconstruction.TonemapStrength:0]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.Lumen.TranslucencyReflections.FrontLayer.Allow:1]]
+[2024.04.11-21.51.28:529][915]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [Scalability]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.MotionBlurQuality:4]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.MotionBlur.HalfResGather:0]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.AmbientOcclusionLevels:-1]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.DepthOfFieldQuality:2]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.RenderTargetPoolMin:400]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.LensFlareQuality:2]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.SceneColorFringeQuality:1]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.BloomQuality:5]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.Bloom.ScreenPercentage:50.000]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.FastBlurThreshold:100]]
+[2024.04.11-21.51.28:529][915]LogConfig: Set CVar [[r.Upscale.Quality:3]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.LightShaftQuality:1]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.Filter.SizeScale:1]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.Tonemapper.Quality:5]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2024.04.11-21.51.28:530][915]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [Scalability]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.Streaming.MipBias:0]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.Streaming.Boost:1]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.MaxAnisotropy:8]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.VT.MaxAnisotropy:8]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.Streaming.PoolSize:1000]]
+[2024.04.11-21.51.28:530][915]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [Scalability]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.RefractionQuality:2]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.SceneColorFormat:4]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.DetailMode:2]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.TranslucencyVolumeBlur:1]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.SSS.Scale:1]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.SSS.SampleSet:2]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.SSS.Quality:1]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.SSS.HalfRes:0]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.SSGI.Quality:3]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.EmitterSpawnRateScale:1.0]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.ParticleLightQuality:2]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[fx.Niagara.QualityLevel:3]]
+[2024.04.11-21.51.28:530][915]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [Scalability]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[foliage.DensityScale:1.0]]
+[2024.04.11-21.51.28:530][915]LogConfig: Set CVar [[grass.DensityScale:1.0]]
+[2024.04.11-21.51.28:530][915]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [Scalability]
+[2024.04.11-21.51.28:532][915]LogConfig: Set CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2024.04.11-21.51.28:532][915]LogConfig: Set CVar [[r.AnisotropicMaterials:1]]
+[2024.04.11-21.51.28:599][915]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2024.04.11-21.51.29:332][918]LogContentStreaming: Texture pool size now 1000 MB
+[2024.04.11-21.51.38:651][ 32]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@0] File [Scalability]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.SkeletalMeshLODBias:2]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.ViewDistanceScale:0.4]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@0] File [Scalability]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.FXAA.Quality:0]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.TemporalAA.Quality:0]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.TSR.History.ScreenPercentage:100]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.TSR.History.UpdateQuality:0]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.TSR.ShadingRejection.Flickering:0]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.TSR.ShadingRejection.TileOverscan:2]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: CVar [[r.TSR.Velocity.Extrapolation:0]] deferred - dummy variable created
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.TSR.RejectionAntiAliasingQuality:0]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Applying CVar settings from Section [ShadowQuality@0] File [Scalability]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.LightFunctionQuality:0]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.ShadowQuality:0]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.Shadow.CSM.MaxCascades:1]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.Shadow.MaxResolution:512]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.Shadow.MaxCSMResolution:512]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.Shadow.RadiusThreshold:0.06]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.Shadow.DistanceScale:0.6]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.Shadow.CSM.TransitionScale:0]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.Shadow.PreShadowResolutionFactor:0.5]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.DistanceFieldShadowing:0]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.VolumetricFog:0]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.LightMaxDrawDistanceScale:0]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.CapsuleShadows:0]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.Shadow.Virtual.MaxPhysicalPages:512]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasDirectional:0.0]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasDirectionalMoving:0.0]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasLocal:1.0]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasLocalMoving:2.0]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.RayCountDirectional:0]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.SamplesPerRayDirectional:2]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.RayCountLocal:0]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.SamplesPerRayLocal:2]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Applying CVar settings from Section [GlobalIlluminationQuality@0] File [Scalability]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.DistanceFieldAO:0]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.Lumen.DiffuseIndirect.Allow:0]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Applying CVar settings from Section [ReflectionQuality@0] File [Scalability]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.SSR.Quality:0]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.SSR.HalfResSceneColor:1]]
+[2024.04.11-21.51.38:651][ 32]LogConfig: Set CVar [[r.Lumen.Reflections.Allow:0]]
+[2024.04.11-21.51.38:652][ 32]LogConfig: Applying CVar settings from Section [PostProcessQuality@0] File [Scalability]
+[2024.04.11-21.51.38:652][ 32]LogConfig: Set CVar [[r.MotionBlurQuality:0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.MotionBlur.HalfResGather:1]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.AmbientOcclusionMipLevelFactor:1.0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.AmbientOcclusionMaxQuality:0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.AmbientOcclusionLevels:0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.AmbientOcclusionRadiusScale:1.2]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.DepthOfFieldQuality:0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.RenderTargetPoolMin:300]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.LensFlareQuality:0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.SceneColorFringeQuality:0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.BloomQuality:4]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.Bloom.ScreenPercentage:25.000]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.FastBlurThreshold:0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.Upscale.Quality:1]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.LightShaftQuality:0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.Filter.SizeScale:0.6]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.Tonemapper.Quality:0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Applying CVar settings from Section [TextureQuality@0] File [Scalability]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.Streaming.MipBias:16]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.Streaming.AmortizeCPUToGPUCopy:1]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:1]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.Streaming.Boost:0.3]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.MaxAnisotropy:0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.VT.MaxAnisotropy:4]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.Streaming.LimitPoolSizeToVRAM:1]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.Streaming.PoolSize:400]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Applying CVar settings from Section [EffectsQuality@0] File [Scalability]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.TranslucencyLightingVolumeDim:24]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.RefractionQuality:0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.SceneColorFormat:3]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.DetailMode:0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.TranslucencyVolumeBlur:0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.MaterialQualityLevel:0 ; Low quality]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.SSS.Scale:0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.SSS.SampleSet:0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.SSS.Quality:0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.SSS.HalfRes:1]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.SSGI.Quality:0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.EmitterSpawnRateScale:0.125]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.ParticleLightQuality:0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:1]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:8.0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:2.0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:16.0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.SkyAtmosphere.SampleCountMin:2.0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.SkyAtmosphere.SampleCountMax:16.0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:1]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[r.SkyLight.RealTimeReflectionCapture:0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[fx.Niagara.QualityLevel:0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Applying CVar settings from Section [FoliageQuality@0] File [Scalability]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[foliage.DensityScale:0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Set CVar [[grass.DensityScale:0]]
+[2024.04.11-21.51.38:653][ 32]LogConfig: Applying CVar settings from Section [ShadingQuality@0] File [Scalability]
+[2024.04.11-21.51.38:654][ 32]LogConfig: Set CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:1]]
+[2024.04.11-21.51.38:654][ 32]LogConfig: Set CVar [[r.AnisotropicMaterials:0]]
+[2024.04.11-21.51.38:743][ 32]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2024.04.11-21.51.39:146][ 37]LogContentStreaming: Texture pool size now 400 MB
+[2024.04.11-21.53.12:318][266]LogViewport: Scene viewport resized to 830x419, mode Windowed.
+[2024.04.11-21.53.12:326][266]LogViewport: Scene viewport resized to 829x419, mode Windowed.
+[2024.04.11-21.53.12:356][266]LogViewport: Scene viewport resized to 829x419, mode Windowed.
+[2024.04.11-21.53.12:368][266]LogViewport: Scene viewport resized to 895x453, mode Windowed.
+[2024.04.11-21.53.12:393][267]LogViewport: Scene viewport resized to 830x420, mode Windowed.
+[2024.04.11-21.53.12:449][268]LogViewport: Scene viewport resized to 830x419, mode Windowed.
+[2024.04.11-21.53.41:958][682]LogViewport: Scene viewport resized to 1441x731, mode Windowed.
+[2024.04.11-21.53.42:084][683]LogViewport: Scene viewport resized to 1665x845, mode Windowed.
+[2024.04.11-21.53.50:271][901]Cmd: POLY SELECT ALL
+[2024.04.11-21.54.02:531][222]Cmd: STAT FPS
+[2024.04.11-21.54.12:640][477]Cmd: STAT FPS
+[2024.04.11-21.55.29:256][495]Cmd: STAT FPS
+[2024.04.11-21.56.32:503][643]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2024.04.11-21.56.32:524][643]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Maps/Minimal_Default_Auto1
+[2024.04.11-21.56.32:524][643]LogSavePackage: Moving '../../../../../../Users/Kette/OneDrive/Documents/Unreal Projects/project-w/ProjectW/Saved/Minimal_Default_Auto18C0D37C34F98B9A0A32EE9A79076092D.tmp' to '../../../../../../Users/Kette/OneDrive/Documents/Unreal Projects/project-w/ProjectW/Saved/Autosaves/Game/Maps/Minimal_Default_Auto1.umap'
+[2024.04.11-21.56.32:526][643]LogAssetRegistry: Warning: ScanPathsSynchronous: ../../../../../../Users/Kette/OneDrive/Documents/Unreal Projects/project-w/ProjectW/Saved/Autosaves/Game/Maps/Minimal_Default_Auto1.umap is in the /Temp path, will not scan.
+[2024.04.11-21.56.32:526][643]LogAssetRegistry: Warning: ScanPathsSynchronous: /Temp/__ExternalActors__/Autosaves/Game/Maps/Minimal_Default_Auto1 is in the /Temp path, will not scan.
+[2024.04.11-21.56.32:526][643]LogAssetRegistry: Warning: ScanPathsSynchronous: /Temp/__ExternalObjects__/Autosaves/Game/Maps/Minimal_Default_Auto1 is in the /Temp path, will not scan.
+[2024.04.11-21.56.32:526][643]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/Minimal_Default' took 0.041
+[2024.04.11-21.56.32:527][643]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.041
+[2024.04.11-21.58.18:192][556]LogViewport: Scene viewport resized to 1919x1020, mode Windowed.
+[2024.04.11-21.58.18:235][557]LogViewport: Scene viewport resized to 1923x1024, mode Windowed.
+[2024.04.11-21.58.18:323][558]LogViewport: Scene viewport resized to 1924x1024, mode Windowed.
+[2024.04.11-21.58.32:746][917]LogViewport: Scene viewport resized to 1683x857, mode Windowed.
+[2024.04.11-21.58.32:770][918]LogViewport: Scene viewport resized to 1673x851, mode Windowed.
+[2024.04.11-21.58.32:842][919]LogViewport: Scene viewport resized to 1665x846, mode Windowed.
+[2024.04.11-21.58.32:898][920]LogViewport: Scene viewport resized to 1665x845, mode Windowed.
+[2024.04.11-21.59.45:416][852]LogViewport: Scene viewport resized to 1920x1021, mode Windowed.
+[2024.04.11-21.59.45:451][853]LogViewport: Scene viewport resized to 1924x1024, mode Windowed.
+[2024.04.11-22.00.31:698][848]LogCore: Display: Tracing Screenshot "HighresScreenshot00000" taken with size: 1889 x 960
+[2024.04.11-22.00.32:046][849]LogClient: High resolution screenshot saved as C:/Users/Kette/OneDrive/Documents/Unreal Projects/project-w/ProjectW/Saved/Screenshots/WindowsEditor/HighresScreenshot00000.png
+[2024.04.11-22.00.53:726][ 55]Cmd: r.ResetRenderTargetsExtent
+[2024.04.11-22.00.53:726][ 55]Scene texture extent history reset. Next scene render will reallocate textures at the requested size.
+[2024.04.11-22.00.53:726][ 55]LogSlate: Window 'High Resolution Screenshot' being destroyed
+[2024.04.11-22.00.56:040][102]LogViewport: Scene viewport resized to 1673x850, mode Windowed.
+[2024.04.11-22.00.56:073][103]LogViewport: Scene viewport resized to 1667x846, mode Windowed.
+[2024.04.11-22.00.56:195][104]LogViewport: Scene viewport resized to 1665x846, mode Windowed.
+[2024.04.11-22.00.56:294][105]LogViewport: Scene viewport resized to 1665x845, mode Windowed.
+[2024.04.11-22.01.04:610][289]Cmd: POLY SELECT ADJACENT WALLS
