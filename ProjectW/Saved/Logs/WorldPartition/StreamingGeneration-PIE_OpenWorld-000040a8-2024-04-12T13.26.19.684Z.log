@@ -1,0 +1,50 @@
+[+] Containers:
+ |- [+] Container: /Game/Maps/OpenWorld
+ |   |- [+] ActorDescs:
+ |   |   |- Guid:F9234AAA4FA982F0743629A49FF66F74 BaseClass: NativeClass:/Script/Engine.WorldDataLayers Name:WorldDataLayers Label:WorldDataLayers SpatiallyLoaded:0 Bounds:Invalid RuntimeGrid:None EditorOnly:0 RuntimeOnly:0 HLODRelevant:0 ListedInSceneOutliner:1 IsMainWorldOnly:1
+ |   |- [+] Clusters:
+ |   |   |- [+] [  0]
+ |   |   |   |- Guid:F9234AAA4FA982F0743629A49FF66F74 BaseClass: NativeClass:/Script/Engine.WorldDataLayers Name:WorldDataLayers Label:WorldDataLayers SpatiallyLoaded:0 Bounds:Invalid RuntimeGrid:None EditorOnly:0 RuntimeOnly:0 HLODRelevant:0 ListedInSceneOutliner:1 IsMainWorldOnly:1
+ |- ContainerInstances:
+ |- [+] MainContainer:
+ |   |-        ID: 00000000000000000000000000000000
+ |   |-  ParentID: 00000000000000000000000000000000
+ |   |-    Bounds: IsValid=false, Min=(X=0.000 Y=0.000 Z=0.000), Max=(X=0.000 Y=0.000 Z=0.000)
+ |   |- Transform: 0.000000,0.000000,0.000000|0.000000,0.000000,-0.000000|1.000000,1.000000,1.000000
+ |   |- Container: /Game/Maps/OpenWorld
+----------------------------------------------------------------------------------------------------------------
+OpenWorld - Persistent Level
+----------------------------------------------------------------------------------------------------------------
+[+] Content of OpenWorld Persistent Level
+ |- Always loaded Actor Count: 7 
+ |- Actor Path: /Game/Maps/OpenWorld.OpenWorld:PersistentLevel.AbstractNavData-Default
+ |- Actor Package: /Game/Maps/OpenWorld
+ |- Actor Path: /Game/Maps/OpenWorld.OpenWorld:PersistentLevel.Brush_0
+ |- Actor Package: /Game/Maps/OpenWorld
+ |- Actor Path: /Game/Maps/OpenWorld.OpenWorld:PersistentLevel.DefaultPhysicsVolume_0
+ |- Actor Package: /Game/Maps/OpenWorld
+ |- Actor Path: /Game/Maps/OpenWorld.OpenWorld:PersistentLevel.GameplayDebuggerPlayerManager_0
+ |- Actor Package: /Game/Maps/OpenWorld
+ |- Actor Path: /Game/Maps/OpenWorld.OpenWorld:PersistentLevel.WorldDataLayers
+ |- Actor Package: /Game/__ExternalActors__/Maps/OpenWorld/C/A4/SYX12GDR1WTMA06YRDZ64I
+ |- Actor Path: /Game/Maps/OpenWorld.OpenWorld:PersistentLevel.WorldPartitionMiniMap_UAID_200B742DFC8275EB01_1364232912
+ |- Actor Package: /Game/__ExternalActors__/Maps/OpenWorld/C/1I/G5216LNXJJTP8XXILLEJTF
+ |- Actor Path: /Game/Maps/OpenWorld.OpenWorld:PersistentLevel.WorldSettings
+ |- Actor Package: /Game/Maps/OpenWorld
+
+----------------------------------------------------------------------------------------------------------------
+OpenWorld - Runtime Spatial Hash - Streaming Grid - MainGrid
+----------------------------------------------------------------------------------------------------------------
+            Origin: X=0.000 Y=0.000 Z=0.000
+         Cell Size: 12800
+      World Bounds: IsValid=false, Min=(X=0.000 Y=0.000 Z=0.000), Max=(X=0.000 Y=0.000 Z=0.000)
+     Loading Range: 25600.00
+Block Slow Loading: No
+ ClientOnlyVisible: No
+            Origin: X=0.000 Y=0.000 Z=0.000
+
+[+] Grid Levels: 1
+ |- Level  0: Cell Count    0 | Cell Size   12800 | Actor Count    0 (0.0%)
+
+[+] Content of Grid Level 0
+

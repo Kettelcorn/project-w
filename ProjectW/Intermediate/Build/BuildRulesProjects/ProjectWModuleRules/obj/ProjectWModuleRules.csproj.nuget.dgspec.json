@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kette\\OneDrive\\Documents\\Unreal Projects\\ProjectW\\Intermediate\\Build\\BuildRulesProjects\\ProjectWModuleRules\\ProjectWModuleRules.csproj": {}
+    "C:\\Users\\Kette\\OneDrive\\Documents\\Unreal Projects\\project-w\\ProjectW\\Intermediate\\Build\\BuildRulesProjects\\ProjectWModuleRules\\ProjectWModuleRules.csproj": {}
   },
   "projects": {
     "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5ProgramRules\\UE5ProgramRules.csproj": {
@@ -1073,14 +1073,14 @@
         }
       }
     },
-    "C:\\Users\\Kette\\OneDrive\\Documents\\Unreal Projects\\ProjectW\\Intermediate\\Build\\BuildRulesProjects\\ProjectWModuleRules\\ProjectWModuleRules.csproj": {
+    "C:\\Users\\Kette\\OneDrive\\Documents\\Unreal Projects\\project-w\\ProjectW\\Intermediate\\Build\\BuildRulesProjects\\ProjectWModuleRules\\ProjectWModuleRules.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kette\\OneDrive\\Documents\\Unreal Projects\\ProjectW\\Intermediate\\Build\\BuildRulesProjects\\ProjectWModuleRules\\ProjectWModuleRules.csproj",
+        "projectUniqueName": "C:\\Users\\Kette\\OneDrive\\Documents\\Unreal Projects\\project-w\\ProjectW\\Intermediate\\Build\\BuildRulesProjects\\ProjectWModuleRules\\ProjectWModuleRules.csproj",
         "projectName": "ProjectWModuleRules",
-        "projectPath": "C:\\Users\\Kette\\OneDrive\\Documents\\Unreal Projects\\ProjectW\\Intermediate\\Build\\BuildRulesProjects\\ProjectWModuleRules\\ProjectWModuleRules.csproj",
+        "projectPath": "C:\\Users\\Kette\\OneDrive\\Documents\\Unreal Projects\\project-w\\ProjectW\\Intermediate\\Build\\BuildRulesProjects\\ProjectWModuleRules\\ProjectWModuleRules.csproj",
         "packagesPath": "C:\\Users\\Kette\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kette\\OneDrive\\Documents\\Unreal Projects\\ProjectW\\Intermediate\\Build\\BuildRulesProjects\\ProjectWModuleRules\\obj\\",
+        "outputPath": "C:\\Users\\Kette\\OneDrive\\Documents\\Unreal Projects\\project-w\\ProjectW\\Intermediate\\Build\\BuildRulesProjects\\ProjectWModuleRules\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZW7gnQQeQYkiHWfvpXUIE0P07ssnvaLJpAPeXC3SS3sb8BdgLaYzLmxBLtytOZtuGUqLd3bXnFtDIa0lPgaEAw==",
+  "dgSpecHash": "Fd3uQ16uj3bcLL81BNtrbHIfTp+6JVfqsTuQyiec2iOGGXhV4LiTaqLpMzGKIXaLj6pdKOA7+upSG9sVzJd48Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kette\\OneDrive\\Documents\\Unreal Projects\\ProjectW\\Intermediate\\Build\\BuildRulesProjects\\ProjectWModuleRules\\ProjectWModuleRules.csproj",
+  "projectFilePath": "C:\\Users\\Kette\\OneDrive\\Documents\\Unreal Projects\\project-w\\ProjectW\\Intermediate\\Build\\BuildRulesProjects\\ProjectWModuleRules\\ProjectWModuleRules.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kette\\.nuget\\packages\\blake3\\0.5.1\\blake3.0.5.1.nupkg.sha512",
     "C:\\Users\\Kette\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
