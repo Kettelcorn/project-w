@@ -14,7 +14,7 @@ ALmao::ALmao()
 // Called when the game starts or when spawned
 void ALmao::BeginPlay()
 {
-	Super::BeginPlay();
+	Super::BeginPlay();   
 	
 }
 

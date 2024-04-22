@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjectWModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+507e3b8a1d3073d165d1616cdb9002a7befe7704")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d3a5f05f8dbcee82009e792273f975c811e6a4d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjectWModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjectWModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,12 +1,12 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\kette\\onedrive\\documents\\unreal projects\\projectw\\source\\projectw\\projectw.cpp",
+        "Source": "d:\\unreal games\\project-w\\projectw\\source\\projectw\\projectw.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\users\\kette\\onedrive\\documents\\unreal projects\\projectw\\intermediate\\build\\win64\\x64\\projectweditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "PCH": "d:\\unreal games\\project-w\\projectw\\intermediate\\build\\win64\\x64\\projectweditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
         "Includes": [
-            "c:\\users\\kette\\onedrive\\documents\\unreal projects\\projectw\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\projectw\\definitions.projectw.h",
-            "c:\\users\\kette\\onedrive\\documents\\unreal projects\\projectw\\source\\projectw\\projectw.h"
+            "d:\\unreal games\\project-w\\projectw\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\projectw\\definitions.projectw.h",
+            "d:\\unreal games\\project-w\\projectw\\source\\projectw\\projectw.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
