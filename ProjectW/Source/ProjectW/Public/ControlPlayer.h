@@ -4,6 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "Camera/CameraComponent.h"
+#include "GameFramework/SpringArmComponent.h"
+#include "Components/StaticMeshComponent.h"
+#include "GameFramework/FloatingPawnMovement.h"
 #include "ControlPlayer.generated.h"
 
 UCLASS()
@@ -16,8 +20,24 @@ public:
 	AControlPlayer();
 
 protected:
+	// Creating properties for Spring Arm and Camera (two #include)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Movement")
+	UFloatingPawnMovement* FloatingPawnMovement;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Body")
+	UStaticMeshComponent* MeshComponent;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera")
+	USpringArmComponent* SpringArm;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera")
+	UCameraComponent* Camera;
+
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	
+
 
 public:	
 	// Called every frame
