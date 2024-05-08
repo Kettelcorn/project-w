@@ -1,7 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
+#include "GameFramework/Character.h"
+#include "GameFramework/CharacterMovementComponent.h"
 #include "ControlPlayer.h"
+
 
 // Sets default values
 AControlPlayer::AControlPlayer()
@@ -12,7 +14,18 @@ AControlPlayer::AControlPlayer()
 	FloatingPawnMovement = CreateDefaultSubobject<UFloatingPawnMovement>(TEXT("FloatingPawnMovement"));
 
 	//Initialize Mesh component
-	MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MeshComponent"));
+	MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MeshComponent(:"));
+	RootComponent = MeshComponent;
+
+
+
+	MeshComponent->SetSimulatePhysics(true);
+	MeshComponent->SetCollisionProfileName(TEXT("Pawn"));
+	MeshComponent->BodyInstance.bLockXRotation = true;
+	MeshComponent->BodyInstance.bLockYRotation = true;
+	MeshComponent->BodyInstance.bLockZRotation = true;
+
+	
 	
 
 	// Initilize spring arm and camera component
@@ -53,7 +66,7 @@ void AControlPlayer::MoveForward(float Value)
 	if (Value != 0.0f)
 	{
 		// Add movement in the forward direction
-		UE_LOG(LogTemp, Warning, TEXT("Moving forward with value: %f"), Value);
+		//UE_LOG(LogTemp, Warning, TEXT("Moving forward with value: %f"), Value);
 		AddMovementInput(GetActorForwardVector(), Value);
 	}
 }
@@ -63,7 +76,7 @@ void AControlPlayer::MoveRight(float Value)
 	if (Value != 0.0f)
 	{
 		// Add movement in the right direction
-		UE_LOG(LogTemp, Warning, TEXT("Moving forward with value: %f"), Value);
+		//UE_LOG(LogTemp, Warning, TEXT("Moving forward with value: %f"), Value);
 		AddMovementInput(GetActorRightVector(), Value);
 	}
 }
