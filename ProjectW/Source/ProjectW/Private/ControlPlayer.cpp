@@ -15,10 +15,19 @@ AControlPlayer::AControlPlayer()
 
 	//Initialize Mesh component
 	MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MeshComponent"));
+
 	MeshComponent->SetSimulatePhysics(true);
 	MeshComponent->BodyInstance.bLockXRotation = true;
 	MeshComponent->BodyInstance.bLockYRotation = true;
 	MeshComponent->BodyInstance.bLockZRotation = true;
+
+	// Attempting to detect collision with the ground
+	MeshComponent->SetNotifyRigidBodyCollision(true);
+	MeshComponent->BodyInstance.SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	MeshComponent->SetCollisionResponseToChannel(ECollisionChannel::ECC_WorldStatic, ECollisionResponse::ECR_Overlap);
+	MeshComponent->SetGenerateOverlapEvents(true);
+	MeshComponent->OnComponentBeginOverlap.AddDynamic(this, &AControlPlayer::OnBeginOverlap);
+	MeshComponent->OnComponentEndOverlap.AddDynamic(this, &AControlPlayer::OnEndOverlap);
 	MeshComponent->RecreatePhysicsState();
 
 	// Initilize spring arm and camera component
@@ -53,6 +62,26 @@ void AControlPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAxis("MoveForward", this, &AControlPlayer::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &AControlPlayer::MoveRight);
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AControlPlayer::Jump);
+}
+
+void AControlPlayer::OnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	UE_LOG(LogTemp, Warning, TEXT("Touching the ground"));
+	if (OtherComp->ComponentHasTag(FName("Ground")))
+	{
+		// Logic when touching the ground
+		UE_LOG(LogTemp, Warning, TEXT("Touching the ground"));
+	}
+}
+
+void AControlPlayer::OnEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+	UE_LOG(LogTemp, Warning, TEXT("Leaving the ground"));
+	if (OtherComp->ComponentHasTag(FName("Ground")))
+	{
+		// Logic when leaving the ground
+		UE_LOG(LogTemp, Warning, TEXT("Leaving the ground"));
+	}
 }
 
 // Add movement in the forward direction

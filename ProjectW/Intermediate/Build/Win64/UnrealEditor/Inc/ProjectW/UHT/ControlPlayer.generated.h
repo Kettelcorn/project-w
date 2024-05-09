@@ -9,6 +9,9 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
+class UPrimitiveComponent;
+struct FHitResult;
 #ifdef PROJECTW_ControlPlayer_generated_h
 #error "ControlPlayer.generated.h already included, missing '#pragma once' in ControlPlayer.h"
 #endif
@@ -17,7 +20,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_Unreal_Games_project_w_ProjectW_Source_ProjectW_Public_ControlPlayer_h_17_SPARSE_DATA
 #define FID_Unreal_Games_project_w_ProjectW_Source_ProjectW_Public_ControlPlayer_h_17_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_Unreal_Games_project_w_ProjectW_Source_ProjectW_Public_ControlPlayer_h_17_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_Unreal_Games_project_w_ProjectW_Source_ProjectW_Public_ControlPlayer_h_17_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_Unreal_Games_project_w_ProjectW_Source_ProjectW_Public_ControlPlayer_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnEndOverlap); \
+	DECLARE_FUNCTION(execOnBeginOverlap);
+
+
 #define FID_Unreal_Games_project_w_ProjectW_Source_ProjectW_Public_ControlPlayer_h_17_ACCESSORS
 #define FID_Unreal_Games_project_w_ProjectW_Source_ProjectW_Public_ControlPlayer_h_17_INCLASS_NO_PURE_DECLS \
 private: \
