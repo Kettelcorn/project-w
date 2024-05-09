@@ -15,6 +15,11 @@ AControlPlayer::AControlPlayer()
 
 	//Initialize Mesh component
 	MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MeshComponent"));
+	MeshComponent->SetSimulatePhysics(true);
+	MeshComponent->BodyInstance.bLockXRotation = true;
+	MeshComponent->BodyInstance.bLockYRotation = true;
+	MeshComponent->BodyInstance.bLockZRotation = true;
+	MeshComponent->RecreatePhysicsState();
 
 	// Initilize spring arm and camera component
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
@@ -25,27 +30,20 @@ AControlPlayer::AControlPlayer()
 
 	Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	Camera->SetupAttachment(SpringArm, USpringArmComponent::SocketName);
+
+	UE_LOG(LogTemp, Warning, TEXT("%s"), MeshComponent->BodyInstance.bLockXRotation ? TEXT("true") : TEXT("false"));
 }
 
 // Called when the game starts or when spawned
 void AControlPlayer::BeginPlay()
 {
 	Super::BeginPlay();
-
-	MeshComponent->SetSimulatePhysics(true);
-	MeshComponent->BodyInstance.bLockXRotation = true;
-	MeshComponent->BodyInstance.bLockYRotation = true;
-	MeshComponent->BodyInstance.bLockZRotation = true;
-	MeshComponent->RecreatePhysicsState();
 }
 
 // Called every frame
 void AControlPlayer::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-	//UE_LOG(LogTemp, Warning, TEXT("Rotation: %f"), MeshComponent->GetComponentRotation().Yaw);
-	//UE_LOG(LogTemp, Warning, TEXT("%s"), MeshComponent->BodyInstance.bLockXRotation ? TEXT("true") : TEXT("false"));
 }
 
 // Called to bind functionality to input
