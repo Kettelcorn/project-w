@@ -257,6 +257,7 @@
 /I "Developer\PhysicsUtilities\Public"
 /I "..\Intermediate\Build\Win64\UnrealEditor\Inc\WidgetRegistration\UHT"
 /I "Developer\WidgetRegistration\Public"
+/I "D:\Unreal Games\project-w\ProjectW\Intermediate\Build\Win64\UnrealEditor\Inc\ProjectW\UHT"
 /I "D:\Unreal Games\project-w\ProjectW\Source"
 /I "D:\Unreal Games\project-w\ProjectW\Source\ProjectW\Public"
 /external:W0

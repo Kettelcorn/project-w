@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"D:\\Unreal Games\\project-w\\ProjectW\\Source\\ProjectW\\ProjectW.Build.cs",
-		"D:\\Unreal Games\\project-w\\ProjectW\\Source\\ProjectW.Target.cs",
-		"D:\\Unreal Games\\project-w\\ProjectW\\Source\\ProjectWEditor.Target.cs"
+		"C:\\Users\\Kette\\OneDrive\\Documents\\Unreal Projects\\project-w\\ProjectW\\Source\\ProjectW\\ProjectW.Build.cs",
+		"C:\\Users\\Kette\\OneDrive\\Documents\\Unreal Projects\\project-w\\ProjectW\\Source\\ProjectW.Target.cs",
+		"C:\\Users\\Kette\\OneDrive\\Documents\\Unreal Projects\\project-w\\ProjectW\\Source\\ProjectWEditor.Target.cs"
 	],
 	"EngineVersion": "5.3.2"
 }

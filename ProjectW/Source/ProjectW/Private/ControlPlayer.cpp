@@ -53,6 +53,7 @@ void AControlPlayer::BeginPlay()
 void AControlPlayer::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	UE_LOG(LogTemp, Warning, TEXT("LMAO %s"), TEXT("LMAO"));
 }
 
 // Called to bind functionality to input

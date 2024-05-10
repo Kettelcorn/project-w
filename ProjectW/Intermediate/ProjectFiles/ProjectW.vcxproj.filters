@@ -45,66 +45,6 @@
     <ClInclude Include="..\..\Source\ProjectW\ProjectW.h">
       <Filter>Source\ProjectW</Filter>
     </ClInclude>
-    <Filter Include="Source\ProjectW\.vs">
-      <UniqueIdentifier>{765466E6-BFC5-38CC-8F17-69F3DBEB663E}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Source\ProjectW\.vs\ProjectSettings.json">
-      <Filter>Source\ProjectW\.vs</Filter>
-    </None>
-    <None Include="..\..\Source\ProjectW\.vs\slnx.sqlite">
-      <Filter>Source\ProjectW\.vs</Filter>
-    </None>
-    <None Include="..\..\Source\ProjectW\.vs\VSWorkspaceState.json">
-      <Filter>Source\ProjectW\.vs</Filter>
-    </None>
-    <Filter Include="Source\ProjectW\.vs\ProjectW">
-      <UniqueIdentifier>{17BBAE1B-A06D-3603-8E67-FB630081612E}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\ProjectW\.vs\ProjectW\FileContentIndex">
-      <UniqueIdentifier>{9B084110-8AD3-3FDE-9609-D56149B0F1EA}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Source\ProjectW\.vs\ProjectW\FileContentIndex\8e3ed885-7d73-4ed4-8472-ff6c9f9cf8b2.vsidx">
-      <Filter>Source\ProjectW\.vs\ProjectW\FileContentIndex</Filter>
-    </None>
-    <Filter Include="Source\ProjectW\.vs\ProjectW\v17">
-      <UniqueIdentifier>{582E81C5-AC36-3958-8929-C06DAA1A7E8A}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Source\ProjectW\.vs\ProjectW\v17\.wsuo">
-      <Filter>Source\ProjectW\.vs\ProjectW\v17</Filter>
-    </None>
-    <None Include="..\..\Source\ProjectW\.vs\ProjectW\v17\Browse.VC.db">
-      <Filter>Source\ProjectW\.vs\ProjectW\v17</Filter>
-    </None>
-    <None Include="..\..\Source\ProjectW\.vs\ProjectW\v17\DocumentLayout.json">
-      <Filter>Source\ProjectW\.vs\ProjectW\v17</Filter>
-    </None>
-    <None Include="..\..\Source\ProjectW\.vs\ProjectW\v17\Solution.VC.db">
-      <Filter>Source\ProjectW\.vs\ProjectW\v17</Filter>
-    </None>
-    <Filter Include="Source\ProjectW\.vs\ProjectW\v17\ipch">
-      <UniqueIdentifier>{B4EC400C-A13E-35E7-9721-98469811905A}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\ProjectW\.vs\ProjectW\v17\ipch\AutoPCH">
-      <UniqueIdentifier>{FC83DF81-773C-3AC4-80BA-38311590D952}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\ProjectW\.vs\ProjectW\v17\ipch\AutoPCH\3c6a6c06592cd52a">
-      <UniqueIdentifier>{2A35BA3E-5118-3246-89B9-69C10CA17A1F}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Source\ProjectW\.vs\ProjectW\v17\ipch\AutoPCH\3c6a6c06592cd52a\ITEM.ipch">
-      <Filter>Source\ProjectW\.vs\ProjectW\v17\ipch\AutoPCH\3c6a6c06592cd52a</Filter>
-    </None>
-    <Filter Include="Source\ProjectW\.vs\ProjectW\v17\ipch\AutoPCH\b9375933aff25622">
-      <UniqueIdentifier>{47C357E1-FB24-33BB-86D2-2377ECC6CFC1}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Source\ProjectW\.vs\ProjectW\v17\ipch\AutoPCH\b9375933aff25622\PROJECTW.ipch">
-      <Filter>Source\ProjectW\.vs\ProjectW\v17\ipch\AutoPCH\b9375933aff25622</Filter>
-    </None>
-    <Filter Include="Source\ProjectW\.vs\ProjectW\v17\ipch\AutoPCH\df8d0dcdf51357de">
-      <UniqueIdentifier>{81D41DC3-0CF6-3E80-9735-C1AA64A7E25F}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Source\ProjectW\.vs\ProjectW\v17\ipch\AutoPCH\df8d0dcdf51357de\MYACTOR.ipch">
-      <Filter>Source\ProjectW\.vs\ProjectW\v17\ipch\AutoPCH\df8d0dcdf51357de</Filter>
-    </None>
     <Filter Include="Source\ProjectW\Private">
       <UniqueIdentifier>{43152BA1-2906-3ED3-B1FD-119DBC1B192D}</UniqueIdentifier>
     </Filter>
