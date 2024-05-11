@@ -47,6 +47,7 @@ AControlPlayer::AControlPlayer()
 void AControlPlayer::BeginPlay()
 {
 	Super::BeginPlay();
+	UE_LOG(LogTemp, Warning, TEXT("LMAO %s"), TEXT("LMAO"));
 }
 
 // Called every frame
