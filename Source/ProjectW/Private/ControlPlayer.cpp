@@ -47,14 +47,12 @@ AControlPlayer::AControlPlayer()
 void AControlPlayer::BeginPlay()
 {
 	Super::BeginPlay();
-	UE_LOG(LogTemp, Warning, TEXT("LMAO %s"), TEXT("LMAO"));
 }
 
 // Called every frame
 void AControlPlayer::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	UE_LOG(LogTemp, Warning, TEXT("LMAO %s"), TEXT("LMAO"));
 }
 
 // Called to bind functionality to input
