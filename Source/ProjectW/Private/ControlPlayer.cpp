@@ -23,7 +23,7 @@ AControlPlayer::AControlPlayer()
 
 	// Attempting to detect collision with the ground
 	MeshComponent->SetNotifyRigidBodyCollision(true);
-	MeshComponent->BodyInstance.SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	MeshComponent->BodyInstance.SetCollisionEnabled(ECollisionEnabled::QueryOnly);
 	MeshComponent->SetCollisionResponseToChannel(ECollisionChannel::ECC_WorldStatic, ECollisionResponse::ECR_Overlap);
 	MeshComponent->SetGenerateOverlapEvents(true);
 	MeshComponent->OnComponentBeginOverlap.AddDynamic(this, &AControlPlayer::OnBeginOverlap);
@@ -40,13 +40,14 @@ AControlPlayer::AControlPlayer()
 	Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	Camera->SetupAttachment(SpringArm, USpringArmComponent::SocketName);
 
-	UE_LOG(LogTemp, Warning, TEXT("%s"), MeshComponent->BodyInstance.bLockXRotation ? TEXT("true") : TEXT("false"));
+	LandscapeCollision = CreateDefaultSubobject<ALandscapeCollision>(TEXT("LandscapeCollision"));
 }
 
 // Called when the game starts or when spawned
 void AControlPlayer::BeginPlay()
 {
 	Super::BeginPlay();
+	LandscapeCollision->EnableOverlapEventsForLandscapeProxies();
 }
 
 // Called every frame

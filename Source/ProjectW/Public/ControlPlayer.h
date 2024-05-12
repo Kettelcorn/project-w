@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "LandscapeCollision.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Components/StaticMeshComponent.h"
@@ -34,6 +35,9 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera")
 	UCameraComponent* Camera;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Landscape")
+	ALandscapeCollision* LandscapeCollision;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Speed")
 	float Speed;
 
@@ -48,8 +52,6 @@ protected:
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
-	
 
 
 public:	
