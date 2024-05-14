@@ -9,45 +9,48 @@ AControlPlayer::AControlPlayer()
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	// Create floating pawn movement component and set properties
 	FloatingPawnMovement = CreateDefaultSubobject<UFloatingPawnMovement>(TEXT("FloatingPawnMovement"));
 	FloatingPawnMovement->MaxSpeed = 1000.0f;
 
-
-	//Initialize Mesh component
+	//Initialize Mesh component and set properties
 	MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MeshComponent"));
-
 	MeshComponent->SetSimulatePhysics(true);
 	MeshComponent->BodyInstance.bLockXRotation = true;
 	MeshComponent->BodyInstance.bLockYRotation = true;
 	MeshComponent->BodyInstance.bLockZRotation = true;
 
-	// Attempting to detect collision with the ground
-	MeshComponent->SetNotifyRigidBodyCollision(true);
-	MeshComponent->BodyInstance.SetCollisionEnabled(ECollisionEnabled::QueryOnly);
-	MeshComponent->SetCollisionResponseToChannel(ECollisionChannel::ECC_WorldStatic, ECollisionResponse::ECR_Overlap);
-	MeshComponent->SetGenerateOverlapEvents(true);
-	MeshComponent->OnComponentBeginOverlap.AddDynamic(this, &AControlPlayer::OnBeginOverlap);
-	MeshComponent->OnComponentEndOverlap.AddDynamic(this, &AControlPlayer::OnEndOverlap);
-	MeshComponent->RecreatePhysicsState();
+	//Initialize collision box, attach to mesh component, and set properties
+	BoxComponent = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxComponent"));
+	BoxComponent->SetupAttachment(MeshComponent);
+	BoxComponent->SetBoxExtent(FVector(50.0f, 50.0f, 50.0f));
+	BoxComponent->SetRelativeLocation(FVector(0.0f, 0.0f, -5.0f));
 
-	// Initilize spring arm and camera component
+	// Set collision properties for box component
+	BoxComponent->SetCollisionObjectType(ECollisionChannel::ECC_GameTraceChannel1);
+	BoxComponent->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+	BoxComponent->SetGenerateOverlapEvents(true);
+	BoxComponent->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Overlap);
+	BoxComponent->SetCollisionResponseToChannel(ECollisionChannel::ECC_WorldStatic, ECollisionResponse::ECR_Overlap);
+	BoxComponent->OnComponentBeginOverlap.AddDynamic(this, &AControlPlayer::OnBeginOverlap);
+	BoxComponent->OnComponentEndOverlap.AddDynamic(this, &AControlPlayer::OnEndOverlap);
+
+	// Attack spring arm to mesh component and set properties
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
 	SpringArm->SetupAttachment(MeshComponent);
 	SpringArm->TargetArmLength = 500.0f;
 	SpringArm->bEnableCameraLag = true;
 	SpringArm->CameraLagSpeed = 3.0f;
 
+	//Attach camera to spring arm and set properties for follow camera
 	Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	Camera->SetupAttachment(SpringArm, USpringArmComponent::SocketName);
-
-	LandscapeCollision = CreateDefaultSubobject<ALandscapeCollision>(TEXT("LandscapeCollision"));
 }
 
 // Called when the game starts or when spawned
 void AControlPlayer::BeginPlay()
 {
 	Super::BeginPlay();
-	LandscapeCollision->EnableOverlapEventsForLandscapeProxies();
 }
 
 // Called every frame
@@ -65,24 +68,28 @@ void AControlPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AControlPlayer::Jump);
 }
 
+// Increment the overlap counter when beginning overlap with ground component
 void AControlPlayer::OnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Touching the ground"));
-	if (OtherComp->ComponentHasTag(FName("Ground")))
+	if (OtherComp->ComponentHasTag(TEXT("Ground")))
 	{
-		// Logic when touching the ground
-		UE_LOG(LogTemp, Warning, TEXT("Touching the ground"));
+		OverlapCounter++;
 	}
 }
 
+// Increment the overlap counter when ending overlap with ground component
 void AControlPlayer::OnEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Leaving the ground"));
-	if (OtherComp->ComponentHasTag(FName("Ground")))
+	if (OtherComp->ComponentHasTag(TEXT("Ground")))
 	{
-		// Logic when leaving the ground
-		UE_LOG(LogTemp, Warning, TEXT("Leaving the ground"));
+		OverlapCounter--;
 	}
+}
+
+// Check if the character is grounded
+bool AControlPlayer::IsGrounded()
+{
+	return OverlapCounter > 0;
 }
 
 // Add movement in the forward direction
@@ -103,9 +110,14 @@ void AControlPlayer::MoveRight(float Value)
 	}
 }
 
+// Makes chacacter jump if they are grounded
 void AControlPlayer::Jump()
 {
-	const FVector JumpImpulse = FVector(0.f, 0.f, 1.f) * 50000.f;
-	MeshComponent->AddImpulse(JumpImpulse);
+	if (IsGrounded())
+	{
+		const FVector JumpImpulse = FVector(0.f, 0.f, 1.f) * 50000.f;
+		MeshComponent->AddImpulse(JumpImpulse);
+	}
+	
 }
 

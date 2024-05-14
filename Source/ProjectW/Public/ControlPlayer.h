@@ -4,12 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
-#include "LandscapeCollision.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/FloatingPawnMovement.h"
-#include "GameFramework/Character.h"
+#include "Components/BoxComponent.h"
 #include "ControlPlayer.generated.h"
 
 UCLASS()
@@ -35,20 +34,23 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera")
 	UCameraComponent* Camera;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Landscape")
-	ALandscapeCollision* LandscapeCollision;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Jump")
+	UBoxComponent* BoxComponent;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Test")
+	int OverlapCounter;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Speed")
 	float Speed;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Jump")
-	bool CanJump;
 
 	UFUNCTION()
 	void OnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
 	UFUNCTION()
 	void OnEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+
+	UFUNCTION()
+	bool IsGrounded();
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
