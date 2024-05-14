@@ -3,11 +3,12 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Character.h"
+#include "GameFramework/Pawn.h"
+#include "GameFramework/FloatingPawnMovement.h"
 #include "BasicEnemy.generated.h"
 
 UCLASS()
-class PROJECTW_API ABasicEnemy : public ACharacter
+class PROJECTW_API ABasicEnemy : public APawn
 {
 	GENERATED_BODY()
 
@@ -16,7 +17,14 @@ public:
 	ABasicEnemy();
 
 protected:
-	// Called when the game starts or when spawned
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Movement")
+	UFloatingPawnMovement* FloatingPawnMovement;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Body")
+	UStaticMeshComponent* MeshComponent;
+
+
+
 	virtual void BeginPlay() override;
 
 public:	
