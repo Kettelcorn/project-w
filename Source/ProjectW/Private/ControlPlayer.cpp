@@ -27,7 +27,6 @@ AControlPlayer::AControlPlayer()
 	BoxComponent->SetRelativeLocation(FVector(0.0f, 0.0f, -5.0f));
 
 	// Set collision properties for box component
-	BoxComponent->SetCollisionObjectType(ECollisionChannel::ECC_GameTraceChannel1);
 	BoxComponent->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
 	BoxComponent->SetGenerateOverlapEvents(true);
 	BoxComponent->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Overlap);

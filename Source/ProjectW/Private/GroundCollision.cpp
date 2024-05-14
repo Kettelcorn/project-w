@@ -43,7 +43,7 @@ void AGroundCollision::EnableOverlapEvents()
 				Component->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 				Component->SetGenerateOverlapEvents(true);
 				Component->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Overlap);
-				Component->SetCollisionResponseToChannel(ECollisionChannel::ECC_GameTraceChannel1, ECollisionResponse::ECR_Overlap);
+				Component->SetCollisionResponseToChannel(ECollisionChannel::ECC_WorldStatic, ECollisionResponse::ECR_Overlap);
 			}
 		}
 	}
