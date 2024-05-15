@@ -2,6 +2,8 @@
 
 
 #include "BasicEnemy.h"
+#include <ControlPlayer.h>
+#include "EngineUtils.h"
 
 // Sets default values
 ABasicEnemy::ABasicEnemy()
@@ -10,7 +12,7 @@ ABasicEnemy::ABasicEnemy()
 	PrimaryActorTick.bCanEverTick = true;
 
 	FloatingPawnMovement = CreateDefaultSubobject<UFloatingPawnMovement>(TEXT("FloatingPawnMovement"));
-	FloatingPawnMovement->MaxSpeed = 500.0f;
+	FloatingPawnMovement->MaxSpeed = 250.0f;
 
 	MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MeshComponent"));
 	MeshComponent->SetStaticMesh(ConstructorHelpers::FObjectFinder<UStaticMesh>(TEXT("StaticMesh'/Game/StarterContent/Props/MaterialSphere'")).Object);
@@ -18,15 +20,16 @@ ABasicEnemy::ABasicEnemy()
 	MeshComponent->BodyInstance.bLockXRotation = true;
 	MeshComponent->BodyInstance.bLockYRotation = true;
 	MeshComponent->BodyInstance.bLockZRotation = true;
-
-
-
 }
 
 // Called when the game starts or when spawned
 void ABasicEnemy::BeginPlay()
 {
 	Super::BeginPlay();
+	for (TActorIterator<AControlPlayer> It(GetWorld()); It; ++It)
+	{
+		Player = *It;
+	}
 	
 }
 
@@ -34,6 +37,7 @@ void ABasicEnemy::BeginPlay()
 void ABasicEnemy::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	FVector Direction = (Player->GetActorLocation() - GetActorLocation()).GetSafeNormal();
+	FloatingPawnMovement->AddInputVector(Direction);
 }
 
