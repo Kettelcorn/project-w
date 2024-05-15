@@ -26,6 +26,8 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Player")
 	APawn* Player;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	float MovementSpeed;
 
 
 
@@ -34,4 +36,6 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	void MoveTowardsPlayer(float DeltaTime);
 };

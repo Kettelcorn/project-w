@@ -12,7 +12,6 @@ ABasicEnemy::ABasicEnemy()
 	PrimaryActorTick.bCanEverTick = true;
 
 	FloatingPawnMovement = CreateDefaultSubobject<UFloatingPawnMovement>(TEXT("FloatingPawnMovement"));
-	FloatingPawnMovement->MaxSpeed = 250.0f;
 
 	MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MeshComponent"));
 	MeshComponent->SetStaticMesh(ConstructorHelpers::FObjectFinder<UStaticMesh>(TEXT("StaticMesh'/Game/StarterContent/Props/MaterialSphere'")).Object);
@@ -20,6 +19,7 @@ ABasicEnemy::ABasicEnemy()
 	MeshComponent->BodyInstance.bLockXRotation = true;
 	MeshComponent->BodyInstance.bLockYRotation = true;
 	MeshComponent->BodyInstance.bLockZRotation = true;
+	MovementSpeed = 20.0f;
 }
 
 // Called when the game starts or when spawned
@@ -30,14 +30,18 @@ void ABasicEnemy::BeginPlay()
 	{
 		Player = *It;
 	}
-	
 }
 
 // Called every frame
 void ABasicEnemy::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	MoveTowardsPlayer(DeltaTime);
+}
+
+void ABasicEnemy::MoveTowardsPlayer(const float DeltaTime)
+{
 	FVector Direction = (Player->GetActorLocation() - GetActorLocation()).GetSafeNormal();
-	FloatingPawnMovement->AddInputVector(Direction);
+	FloatingPawnMovement->AddInputVector(Direction * MovementSpeed * DeltaTime);
 }
 
