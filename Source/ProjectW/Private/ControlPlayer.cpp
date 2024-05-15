@@ -1,4 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
 
 #include "ControlPlayer.h"
 
@@ -20,6 +19,8 @@ void AControlPlayer::BeginPlay()
 void AControlPlayer::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	SetMovementSpeed(100.0f);
+	ProcessPlayerInput(DeltaTime);
 }
 
 // Called to bind functionality to input
@@ -46,22 +47,16 @@ void AControlPlayer::SetUpFollowCamera()
 	Camera->SetupAttachment(SpringArm, USpringArmComponent::SocketName);
 }
 
-// Add movement in the forward direction
+// Store input for moving forward
 void AControlPlayer::MoveForward(float Value)
 {
-	if (Value != 0.0f)
-	{
-		AddMovementInput(GetActorForwardVector(), Value);
-	}
+	FowardInput = Value;
 }
 
-// Add movement in the right direction
+// Store input for moving right
 void AControlPlayer::MoveRight(float Value)
 {
-	if (Value != 0.0f)
-	{
-		AddMovementInput(GetActorRightVector(), Value);
-	}
+	RightInput = Value;
 }
 
 // Makes chacacter jump if they are grounded
@@ -73,5 +68,12 @@ void AControlPlayer::Jump()
 		MeshComponent->AddImpulse(JumpImpulse);
 	}
 	
+}
+
+// Move the player based on input
+void AControlPlayer::ProcessPlayerInput(float DeltaTime)
+{
+		FVector Direction = FVector(FowardInput, RightInput, 0.0f).GetSafeNormal();
+		FloatingPawnMovement->AddInputVector(Direction * GetMovementSpeed() * DeltaTime);
 }
 

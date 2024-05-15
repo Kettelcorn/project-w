@@ -1,5 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 
 #include "GroundCollision.h"
 #include "EngineUtils.h"
@@ -30,11 +28,14 @@ void AGroundCollision::Tick(float DeltaTime)
 // Set all landscape proxies to have their primitive component generate overlap events
 void AGroundCollision::EnableOverlapEvents()
 {
+	// Get all landscape proxies in the world
 	for (TActorIterator<ALandscapeStreamingProxy> It(GetWorld()); It; ++It)
 	{
 		ALandscapeStreamingProxy* FoundLandscape = *It;
 		TArray<UPrimitiveComponent*> Components;
 		FoundLandscape->GetComponents<UPrimitiveComponent>(Components);
+
+		// Set all components to generate overlap events
 		for (UPrimitiveComponent* Component : Components)
 		{
 			if (Component)

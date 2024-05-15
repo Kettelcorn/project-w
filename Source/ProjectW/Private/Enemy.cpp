@@ -1,5 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 
 #include "Enemy.h"
 #include <ControlPlayer.h>
@@ -9,7 +7,6 @@
 AEnemy::AEnemy()
 {
 	PrimaryActorTick.bCanEverTick = true;
-	SetMovementSpeed(20.0f);
 }
 
 // Called when the game starts or when spawned
@@ -35,16 +32,12 @@ void AEnemy::FindPlayer()
 	}
 }
 
-// Set the movement speed of the enemy
-void AEnemy::SetMovementSpeed(const float speed)
-{
-	MovementSpeed = speed;
-}
-
 // Move the enemy towards the player
 void AEnemy::MoveTowardsPlayer(const float DeltaTime)
 {
-	FVector Direction = (Player->GetActorLocation() - GetActorLocation()).GetSafeNormal();
+	FVector Direction = FVector(Player->GetActorLocation().X - GetActorLocation().X,
+								Player->GetActorLocation().Y - GetActorLocation().Y,
+								0.0f).GetSafeNormal();
 	FloatingPawnMovement->AddInputVector(Direction * MovementSpeed * DeltaTime);
 }
 
