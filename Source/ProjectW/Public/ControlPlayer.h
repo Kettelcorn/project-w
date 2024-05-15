@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Character.h"
+#include "GameFramework/Pawn.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Components/StaticMeshComponent.h"
@@ -12,7 +12,7 @@
 #include "ControlPlayer.generated.h"
 
 UCLASS()
-class PROJECTW_API AControlPlayer : public ACharacter
+class PROJECTW_API AControlPlayer : public APawn
 {
 	GENERATED_BODY()
 
