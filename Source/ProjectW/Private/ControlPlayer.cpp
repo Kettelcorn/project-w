@@ -13,13 +13,13 @@ AControlPlayer::AControlPlayer()
 void AControlPlayer::BeginPlay()
 {
 	Super::BeginPlay();
+	SetMovementSpeed(100.0f);
 }
 
 // Called every frame
 void AControlPlayer::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	SetMovementSpeed(100.0f);
 	ProcessPlayerInput(DeltaTime);
 }
 
